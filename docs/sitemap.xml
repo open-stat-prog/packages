@@ -2,82 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.openstatprog.com/packages/tutorials/packages/loading.html</loc>
-    <lastmod>2026-08-27T10:55:28.529Z</lastmod>
+    <lastmod>2026-08-27T14:33:35.062Z</lastmod>
   </url>
   <url>
     <loc>https://www.openstatprog.com/packages/tutorials/packages/index.html</loc>
-    <lastmod>2026-08-27T10:55:28.527Z</lastmod>
+    <lastmod>2026-08-27T11:52:08.998Z</lastmod>
   </url>
   <url>
     <loc>https://www.openstatprog.com/packages/tutorials/help/index.html</loc>
-    <lastmod>2026-08-27T10:55:28.618Z</lastmod>
+    <lastmod>2026-08-27T15:39:24.647Z</lastmod>
   </url>
   <url>
     <loc>https://www.openstatprog.com/packages/tutorials/help/default_arguments.html</loc>
-    <lastmod>2026-08-27T10:55:28.616Z</lastmod>
+    <lastmod>2026-08-27T16:42:09.252Z</lastmod>
   </url>
   <url>
     <loc>https://www.openstatprog.com/packages/quizzes/packages/questions/install_calls.html</loc>
-    <lastmod>2026-08-27T10:55:28.633Z</lastmod>
+    <lastmod>2026-08-27T15:16:23.791Z</lastmod>
   </url>
   <url>
     <loc>https://www.openstatprog.com/packages/quizzes/packages/index.html</loc>
-    <lastmod>2026-08-27T10:55:28.630Z</lastmod>
+    <lastmod>2026-08-27T17:22:44.806Z</lastmod>
   </url>
   <url>
     <loc>https://www.openstatprog.com/packages/quizzes/help/questions/default_arguments1.html</loc>
-    <lastmod>2026-08-27T10:55:28.677Z</lastmod>
+    <lastmod>2026-08-27T17:19:42.506Z</lastmod>
   </url>
   <url>
     <loc>https://www.openstatprog.com/packages/quizzes/help/questions/accessing_unloaded.html</loc>
-    <lastmod>2026-08-27T10:55:28.674Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.openstatprog.com/packages/outdex.html</loc>
-    <lastmod>2026-08-27T11:09:28.234Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.openstatprog.com/packages/index.html</loc>
-    <lastmod>2026-08-27T11:15:09.537Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.openstatprog.com/packages/conclusion.html</loc>
-    <lastmod>2026-08-27T10:56:02.442Z</lastmod>
+    <lastmod>2026-08-27T17:26:21.462Z</lastmod>
   </url>
   <url>
     <loc>https://www.openstatprog.com/packages/in_progress.html</loc>
     <lastmod>2026-08-27T10:54:21.486Z</lastmod>
   </url>
   <url>
+    <loc>https://www.openstatprog.com/packages/conclusion.html</loc>
+    <lastmod>2026-08-27T17:24:21.175Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.openstatprog.com/packages/index.html</loc>
+    <lastmod>2026-08-27T11:30:29.072Z</lastmod>
+  </url>
+  <url>
     <loc>https://www.openstatprog.com/packages/quizzes/help/index.html</loc>
-    <lastmod>2026-08-27T10:55:28.659Z</lastmod>
+    <lastmod>2026-08-27T17:22:14.387Z</lastmod>
   </url>
   <url>
     <loc>https://www.openstatprog.com/packages/quizzes/help/questions/argument_order.html</loc>
-    <lastmod>2026-08-27T10:55:28.675Z</lastmod>
+    <lastmod>2026-08-27T17:26:28.683Z</lastmod>
   </url>
   <url>
     <loc>https://www.openstatprog.com/packages/quizzes/help/questions/default_arguments2.html</loc>
-    <lastmod>2026-08-27T10:55:28.676Z</lastmod>
+    <lastmod>2026-08-27T17:21:35.841Z</lastmod>
   </url>
   <url>
     <loc>https://www.openstatprog.com/packages/quizzes/packages/questions/common_errors.html</loc>
-    <lastmod>2026-08-27T10:55:28.632Z</lastmod>
+    <lastmod>2026-08-27T17:28:23.749Z</lastmod>
   </url>
   <url>
     <loc>https://www.openstatprog.com/packages/tutorials/help/access.html</loc>
-    <lastmod>2026-08-27T10:55:28.615Z</lastmod>
+    <lastmod>2026-08-27T15:51:07.620Z</lastmod>
   </url>
   <url>
     <loc>https://www.openstatprog.com/packages/tutorials/help/independent_task.html</loc>
-    <lastmod>2026-08-27T10:55:28.617Z</lastmod>
+    <lastmod>2026-08-27T17:27:26.455Z</lastmod>
   </url>
   <url>
     <loc>https://www.openstatprog.com/packages/tutorials/help/sections.html</loc>
-    <lastmod>2026-08-27T10:55:28.619Z</lastmod>
+    <lastmod>2026-08-27T16:05:21.188Z</lastmod>
   </url>
   <url>
     <loc>https://www.openstatprog.com/packages/tutorials/packages/installing.html</loc>
-    <lastmod>2026-08-27T10:55:28.528Z</lastmod>
+    <lastmod>2026-08-27T14:04:19.488Z</lastmod>
   </url>
 </urlset>

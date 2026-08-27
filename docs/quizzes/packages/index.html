@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../tutorials/help/index.html" rel="next">
+<link href="../../tutorials/packages/loading.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -69,56 +71,30 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>
-div.callout-resource.callout {
-  border-left-color: orange;
+div.callout-reading-advanced.callout {
+  border-left-color: red;
 }
-div.callout-resource.callout-style-default > .callout-header {
-  background-color: rgb(from orange r g b / 13%);
+div.callout-reading-advanced.callout-style-default > .callout-header {
+  background-color: rgb(from red r g b / 13%);
 }
-div.callout-resource .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-resource.callout-style-default .callout-icon::before, div.callout-resource.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f0c1' !important;
-  background-image: none;
-}
-div.callout-reading.callout {
-  border-left-color: violet;
-}
-div.callout-reading.callout-style-default > .callout-header {
-  background-color: rgb(from violet r g b / 13%);
-}
-div.callout-reading .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-reading.callout-style-default .callout-icon::before, div.callout-reading.callout-titled .callout-icon::before {
+div.callout-reading-advanced .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-reading-advanced.callout-style-default .callout-icon::before, div.callout-reading-advanced.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
   content: '\f518' !important;
   background-image: none;
 }
-div.callout-completion-time.callout {
-  border-left-color: gray;
+div.callout-going-further.callout {
+  border-left-color: #B58900;
 }
-div.callout-completion-time.callout-style-default > .callout-header {
-  background-color: rgb(from gray r g b / 13%);
+div.callout-going-further.callout-style-default > .callout-header {
+  background-color: rgba(181, 137, 0, 0.13);
 }
-div.callout-completion-time .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-completion-time.callout-style-default .callout-icon::before, div.callout-completion-time.callout-titled .callout-icon::before {
+div.callout-going-further .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-going-further.callout-style-default .callout-icon::before, div.callout-going-further.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
-  content: '\f2f2' !important;
-  background-image: none;
-}
-div.callout-practice.callout {
-  border-left-color: green;
-}
-div.callout-practice.callout-style-default > .callout-header {
-  background-color: rgb(from green r g b / 13%);
-}
-div.callout-practice .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-practice.callout-style-default .callout-icon::before, div.callout-practice.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f085' !important;
+  content: '\f4d7' !important;
   background-image: none;
 }
 div.callout-knowledge-check.callout {
@@ -134,17 +110,17 @@ div.callout-knowledge-check.callout-style-default .callout-icon::before, div.cal
   content: '\f044' !important;
   background-image: none;
 }
-div.callout-going-further.callout {
-  border-left-color: #B58900;
+div.callout-practice.callout {
+  border-left-color: green;
 }
-div.callout-going-further.callout-style-default > .callout-header {
-  background-color: rgba(181, 137, 0, 0.13);
+div.callout-practice.callout-style-default > .callout-header {
+  background-color: rgb(from green r g b / 13%);
 }
-div.callout-going-further .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-going-further.callout-style-default .callout-icon::before, div.callout-going-further.callout-titled .callout-icon::before {
+div.callout-practice .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-practice.callout-style-default .callout-icon::before, div.callout-practice.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
-  content: '\f4d7' !important;
+  content: '\f085' !important;
   background-image: none;
 }
 div.callout-explanation.callout {
@@ -173,17 +149,43 @@ div.callout-common-mistakes.callout-style-default .callout-icon::before, div.cal
   content: '\f188' !important;
   background-image: none;
 }
-div.callout-reading-advanced.callout {
-  border-left-color: red;
+div.callout-reading.callout {
+  border-left-color: violet;
 }
-div.callout-reading-advanced.callout-style-default > .callout-header {
-  background-color: rgb(from red r g b / 13%);
+div.callout-reading.callout-style-default > .callout-header {
+  background-color: rgb(from violet r g b / 13%);
 }
-div.callout-reading-advanced .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-reading-advanced.callout-style-default .callout-icon::before, div.callout-reading-advanced.callout-titled .callout-icon::before {
+div.callout-reading .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-reading.callout-style-default .callout-icon::before, div.callout-reading.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
   content: '\f518' !important;
+  background-image: none;
+}
+div.callout-completion-time.callout {
+  border-left-color: gray;
+}
+div.callout-completion-time.callout-style-default > .callout-header {
+  background-color: rgb(from gray r g b / 13%);
+}
+div.callout-completion-time .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-completion-time.callout-style-default .callout-icon::before, div.callout-completion-time.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f2f2' !important;
+  background-image: none;
+}
+div.callout-resource.callout {
+  border-left-color: orange;
+}
+div.callout-resource.callout-style-default > .callout-header {
+  background-color: rgb(from orange r g b / 13%);
+}
+div.callout-resource .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-resource.callout-style-default .callout-icon::before, div.callout-resource.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f0c1' !important;
   background-image: none;
 }
 </style>
@@ -210,7 +212,7 @@ div.callout-reading-advanced.callout-style-default .callout-icon::before, div.ca
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="../../index.html" aria-current="page"> 
-<span class="menu-text">In Progress</span></a>
+<span class="menu-text">Add-On Packages</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -238,7 +240,7 @@ div.callout-reading-advanced.callout-style-default .callout-icon::before, div.ca
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Knowledge Quiz: Add-On Packages</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tutorials/packages/index.html">Packages</a></li><li class="breadcrumb-item"><a href="../../quizzes/packages/index.html">Knowledge Quiz</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -253,7 +255,83 @@ div.callout-reading-advanced.callout-style-default .callout-icon::before, div.ca
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">In Progress</span></a>
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../tutorials/packages/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Packages</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tutorials/packages/installing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Installing Packages</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tutorials/packages/loading.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Loading Packages</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../quizzes/packages/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Knowledge Quiz</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../tutorials/help/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Documentation</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tutorials/help/access.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Accessing Help Files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tutorials/help/sections.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Help File Sections</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tutorials/help/default_arguments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Argument Order &amp; Defaults</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tutorials/help/independent_task.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Independent Task</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../quizzes/help/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Knowledge Quiz</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Conclusion</span></a>
   </div>
 </li>
     </ul>
@@ -267,7 +345,7 @@ div.callout-reading-advanced.callout-style-default .callout-icon::before, div.ca
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tutorials/packages/index.html">Packages</a></li><li class="breadcrumb-item"><a href="../../quizzes/packages/index.html">Knowledge Quiz</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Knowledge Quiz: Add-On Packages</h1>
 </div>
@@ -284,6 +362,45 @@ div.callout-reading-advanced.callout-style-default .callout-icon::before, div.ca
 
 
 </header>
+
+
+<div class="cell" data-layout-align="center">
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Which of the following commands will install <em>only</em> the <strong>lavaan</strong> package from CRAN?</p>
+<div id="webex-a3c58fb99fb98a05e7ddb630154b7f57" class="webex-radiogroup" data-answer="OgJPBRRWTgkVVj8=">
+<label><input type="radio" autocomplete="off" name="a3c58fb99fb98a05e7ddb630154b7f57"><span><code>install.packages("lavaan")</code></span></label><label><input type="radio" autocomplete="off" name="a3c58fb99fb98a05e7ddb630154b7f57"><span><code>install.packages(c("lavaan", "dplyr"))</code></span></label><label><input type="radio" autocomplete="off" name="a3c58fb99fb98a05e7ddb630154b7f57"><span><code>library(lavaan)</code></span></label><label><input type="radio" autocomplete="off" name="a3c58fb99fb98a05e7ddb630154b7f57"><span><code>install.packages("dplyr")</code></span></label><label><input type="radio" autocomplete="off" name="a3c58fb99fb98a05e7ddb630154b7f57"><span><code>install.packages("Lavaan")</code></span></label>
+</div>
+</div>
+<div class="webex-solution">
+<ul>
+<li><strong>Yes:</strong> This call installs the <strong>lavaan</strong> package and nothing else</li>
+<li><strong>No:</strong> This call will install both <strong>lavaan</strong> and <strong>dplyr</strong></li>
+<li><strong>No:</strong> This call loads the <strong>lavaan</strong> package</li>
+<li><strong>No:</strong> This call installs <strong>dplyr</strong></li>
+<li><strong>No:</strong> This call will error because the package name is mis-capitalized</li>
+</ul>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Consider the following scenario.</p>
+<ul>
+<li>You run <code>arrange(mtcars, cyl)</code>.</li>
+<li>R returns an error that includes the phrase: <code>could not find function "arrange"</code>.</li>
+<li>The <strong>dplyr</strong> package (which provides <code>arrange()</code>) is already installed on your computer.</li>
+</ul>
+<p>Which of the following actions is most likely to fix the problem?</p>
+<div id="webex-46c66ca51f145263c0dd195b8349df59" class="webex-radiogroup" data-answer="bwdPBhpTTQUdVmw=">
+<label><input type="radio" autocomplete="off" name="46c66ca51f145263c0dd195b8349df59"><span>Run <code>library(dplyr)</code>, then try running <code>arrange(mtcars, cyl)</code> again</span></label><label><input type="radio" autocomplete="off" name="46c66ca51f145263c0dd195b8349df59"><span>Rename the <code>arrange()</code> function</span></label><label><input type="radio" autocomplete="off" name="46c66ca51f145263c0dd195b8349df59"><span>Restart your computer</span></label><label><input type="radio" autocomplete="off" name="46c66ca51f145263c0dd195b8349df59"><span>Run <code>install.packages("dplyr")</code></span></label><label><input type="radio" autocomplete="off" name="46c66ca51f145263c0dd195b8349df59"><span>Run <code>install.packages("arrange")</code></span></label>
+</div>
+</div>
+<div class="webex-solution">
+<p>Since <strong>dplyr</strong> is already installed, the problem isn’t installation. Rather, the <strong>dplyr</strong> package hasn’t been <em>loaded</em> into the current R session. Running <code>library(dplyr)</code> loads the package and makes <code>arrange()</code> available.</p>
+</div>
+</div>
+</div>
+
 
 
 
@@ -304,40 +421,7 @@ Note
 </ul>
 </div>
 </div>
-</div></div><div class="cell" data-layout-align="center">
-<div class="webex-question">
-<div class="webex-check webex-box">
-<p>Which of the following commands will install the <strong>lavaan</strong> package from CRAN?</p>
-<div id="webex-5d4198aa58cc4fe35fb52f83ca2fc334" class="webex-checkboxgroup" data-answer="blQYABUITVAZCD4=">
-<label><input type="checkbox" autocomplete="off" name="5d4198aa58cc4fe35fb52f83ca2fc334"><span><code>remotes::install_github("yrosseel/lavaan")</code></span></label><label><input type="checkbox" autocomplete="off" name="5d4198aa58cc4fe35fb52f83ca2fc334"><span><code>install.packages("lavaan", lib = "~/R/my_packages/")</code></span></label><label><input type="checkbox" autocomplete="off" name="5d4198aa58cc4fe35fb52f83ca2fc334"><span><code>library(lavaan)</code></span></label><label><input type="checkbox" autocomplete="off" name="5d4198aa58cc4fe35fb52f83ca2fc334"><span><code>install.packages("lavaan", repos = "https://cloud.r-project.org")</code></span></label><label><input type="checkbox" autocomplete="off" name="5d4198aa58cc4fe35fb52f83ca2fc334"><span><code>ls(lavaan)</code></span></label>
-</div>
-</div>
-<div class="webex-solution">
-<ul>
-<li>Wrong: Installing the development version of <strong>lavaan</strong> from GitHub</li>
-<li>Correct: Installing from CRAN, but installing into a non-standard library location</li>
-<li>Wrong: Loading the package, not installing</li>
-<li>Correct: Explicitly specifying the CRAN mirror to use</li>
-<li>Wrong: This is a misuse of the <code>ls()</code> function</li>
-</ul>
-</div>
-</div>
-<div class="webex-question">
-<div class="webex-check webex-box">
-<p>You run <code>arrange(mtcars, cyl)</code> and R responds with <code>could not find function "arrange"</code>. The <strong>dplyr</strong> package (which provides <code>arrange()</code>) is already installed on your computer. What is the most likely fix?</p>
-<div id="webex-61d34b1b46fc412a25f82b71feaaa33a" class="webex-radiogroup" data-answer="bQFIAxhSHVMYBjs=">
-<label><input type="radio" autocomplete="off" name="61d34b1b46fc412a25f82b71feaaa33a"><span>Run <code>install.packages("dplyr")</code> again.</span></label><label><input type="radio" autocomplete="off" name="61d34b1b46fc412a25f82b71feaaa33a"><span>Restart your computer.</span></label><label><input type="radio" autocomplete="off" name="61d34b1b46fc412a25f82b71feaaa33a"><span>Run <code>install.packages("arrange")</code>.</span></label><label><input type="radio" autocomplete="off" name="61d34b1b46fc412a25f82b71feaaa33a"><span>Run <code>library(dplyr)</code>, then try <code>arrange()</code> again.</span></label><label><input type="radio" autocomplete="off" name="61d34b1b46fc412a25f82b71feaaa33a"><span>Rename the <code>arrange()</code> function.</span></label>
-</div>
-</div>
-<div class="webex-solution">
-<p>Since <strong>dplyr</strong> is already installed, the problem isn’t installation. It’s that the package hasn’t been <em>loaded</em> into the current R session yet. Running <code>library(dplyr)</code> loads the package and makes <code>arrange()</code> available.</p>
-</div>
-</div>
-</div>
-
-
-
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+</div></div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -765,6 +849,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../tutorials/packages/loading.html" class="pagination-link" aria-label="Loading Packages">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Loading Packages</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../tutorials/help/index.html" class="pagination-link" aria-label="Documentation">
+        <span class="nav-page-text">Documentation</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

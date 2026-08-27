@@ -3,40 +3,45 @@ title: "Loading Packages"
 webr:
   packages:
     - ggplot2
+  autoload-packages: false
 knitr:
   opts_chunk:
     eval: false
 ---
 
-Once you've installed a package, you're nearly ready to use its functions, but there's still one step left: you
-must *load* the package into your active R session.
+Once you've installed a package, you're nearly ready to use its functions, but there's still one step left: you must
+*load* the package into your active R session.
 
-The following code produces an error because we're trying to use the `ggplot()`, `aes()`, and `geom_boxplot()`
-functions provided by the **ggplot2** package, without having loaded that package first.
+**Do:** Run the following code, and take note of the results.
 
-```{r, eval = TRUE, error = TRUE}
+```{webr-r}
 ggplot(iris, aes(Species, Petal.Length)) + geom_boxplot()
 ```
 
-An R package is really just a small piece of software. Like any other software, you only need to *install* it once
-(just like you only need to install RStudio once), but you need to *load* it every time you start a new R session and
-want to use it (just like you need to open RStudio every time you want to use it).
+**See:** The code produces an error because we're trying to use the `ggplot()`, `aes()`, and `geom_boxplot()` functions
+provided by the **ggplot2** package, without having loaded that package first.
+
+An R package is really just a small piece of software. Like any other software, you only need to *install* a package
+once (just like you only needed to install RStudio once), but you need to *load* a package every time you want to use it
+in a new R session (just like you need to open RStudio every time you want to use it).
 
 We load packages with the `library()` function.
 
 ```{r}
+# Load the dplyr package
 library(dplyr)
 ```
 
-`library()` can only load one package at a time, so call it once per package if you need more than one.
+The `library()` function can only load one package at a time. So, you need one `library()` call for every package that
+you want to load.
 
 ```{r}
+# Load the dplyr and ggplot2 packages
 library(dplyr)
 library(ggplot2)
 ```
 
-Running the code below should now produce a simple plot, since we've loaded **ggplot2** before trying to use the
-functions it provides.
+**Do:** Run the code below, and note how the results differ from the previous attempt.
 
 ```{webr-r}
 library(ggplot2)
@@ -44,24 +49,59 @@ library(ggplot2)
 ggplot(iris, aes(Species, Petal.Length)) + geom_boxplot()
 ```
 
-## Common Errors
+**See:** You should now see a simple plot. Since we've loaded **ggplot2** before trying to use the functions it
+provides, our code executes successfully.
 
-- **Using a package's functions before loading it.** This is exactly the error you saw at the top of this page.
-  It's the single most common package-related mistake. If R tells you it "could not find function," check whether
-  you've loaded the package that provides it.
-- **Trying to load a package you haven't installed.** `library()` will error with something like "there is no
-  package called..." if the package isn't installed yet. Installing and loading are two separate steps. You need to
-  install a package (once) before you can ever load it.
-- **Misspelling or mis-capitalizing the package name.** Package names are case-sensitive, just like function names.
-  `library(Dplyr)` will fail even though `library(dplyr)` works fine.
+::: common-mistakes
 
-## Quick Check
+**Mistake 1:** Using a package's functions before loading the package
 
-- What's the difference between *installing* a package and *loading* a package?
-- If R says `could not find function "arrange"`, what's the most likely fix?
+This is the error you saw at the top of this page, and it's probably the single most common package-related mistake. If
+R tells you it "could not find function...", check whether you've loaded the package that provides that function.
+
+**Mistake 2:** Trying to load a package you haven't installed
+
+```{r}
+#| eval: true
+#| error: true
+
+library(tensor)
+```
+
+In the code above, `library()` errors because we haven't installed the **tensor** package. Remember that installing and
+loading are two separate steps. You need to install a package (once) before you can load that package.
+
+**Mistake 3:** Misspelling or mis-capitalizing the package name
+
+R can't guess the package you wanted to load if you misspell the package's name.
+
+```{r}
+#| eval: true
+#| error: true
+
+library(gggplot2)
+```
+
+Likewise, package names are case-sensitive, just like everything else in R.
+
+```{r}
+#| eval: true
+#| error: true
+
+library(ggPlot2)
+```
+
+:::
+
+::: knowledge-check
+
+- What is the difference between *installing* a package and *loading* a package?
+- If R says `could not find function "arrange"`, what is the most likely fix?
 
 ```{webr-r}
 ```
+
+:::
 
 ::: {.callout-tip}
 
@@ -74,7 +114,6 @@ You're ready to move on to [Documentation](/tutorials/help/index.qmd) if you can
 - Load an installed package using `library()`.
 - Recognize the error you get when you try to use a function from a package you haven't loaded.
 
-If any of these still feel shaky, revisit the relevant page above, or try the
-[Knowledge Quiz](/quizzes/packages/index.qmd) to pinpoint exactly where to focus.
+Take the [Knowledge Quiz](/quizzes/packages/index.qmd) to evaluate your learning.
 
 :::

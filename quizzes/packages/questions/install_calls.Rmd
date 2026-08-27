@@ -1,15 +1,15 @@
 Question
 ========
-Which of the following commands will install the **lavaan** package from CRAN?
+
+Which of the following commands will install *only* the **lavaan** package from CRAN?
 
 Answerlist
 ----------
+
 * `install.packages("lavaan")`
-* `install.packages("lavaan", repos = "https://cloud.r-project.org")`
-* `install.packages("lavaan", lib = "~/R/my_packages/")`
+* `install.packages("Lavaan")`
+* `install.packages(c("lavaan", "dplyr"))`
 * `install.packages("dplyr")`
-* `install.packages("dplyr", repos = "https://cloud.r-project.org")`
-* `remotes::install_github("yrosseel/lavaan")`
 * `library(lavaan)`
 * `ls(lavaan)`
 * `help(lavaan)`
@@ -19,19 +19,19 @@ Solution
 
 Answerlist
 ----------
-* Correct: The simple case
-* Correct: Explicitly specifying the CRAN mirror to use
-* Correct: Installing from CRAN, but installing into a non-standard library location
-* Wrong: Installing **dplyr**
-* Wrong: Installing **dplyr**
-* Wrong: Installing the development version of **lavaan** from GitHub
-* Wrong: Loading the package, not installing
-* Wrong: This is a misuse of the `ls()` function
-* Wrong: Accessing the help file for the `lavaan()` function
+
+* **Yes:** This call installs the **lavaan** package and nothing else
+* **No:** This call will error because the package name is mis-capitalized
+* **No:** This call will install both **lavaan** and **dplyr**
+* **No:** This call installs **dplyr**
+* **No:** This call loads the **lavaan** package
+* **No:** This line represents a misuse of the `ls()` function
+* **No:** This call opens the help file for the `lavaan()` function
 
 Meta-information
 ================
+
 exname: Valid install.packages() calls
-extype: mchoice
-exsolution: 111000000
+extype: schoice
+exsolution: 1000000
 exshuffle: 5

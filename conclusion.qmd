@@ -11,55 +11,11 @@ format:
 source(here::here("R", "buttons.R"))
 ```
 
-Congratulations! You've completed the *First Steps* module!
-
-## Hand-In Assignment
-
-::: practice
-
-## Hand in Assignment
-
-This assignment can be used as part of a course. Through this assignment, you show that you understand everything covered in this module: basic commands, functions, packages, and documentation.
-Complete each step below in your own R session, then submit your work (see "What to Hand In" below).
-
-1. **Basic Commands.** Create an object called `weekly_spend` containing at least five numeric values, representing
-   a week's worth of daily spending (in whatever currency you like). Then create a second object called
-   `over_budget` that uses a logical comparison to check whether the *average* daily spend in `weekly_spend` exceeds
-   20.
-1. **Functions.** Using two *different* built-in functions, calculate (a) the total of `weekly_spend` and (b) the
-   average of `weekly_spend`. Store each result in its own, sensibly-named object.
-1. **Packages.** Install and load the **scales** package. Use the `scales::dollar()` function it provides to format
-   your total from step 2 as currency (e.g., `"$142.50"`).
-1. **Documentation.** Open the help file for one function you have *not* used anywhere in this module (your choice —
-   `sd()`, `median()`, and `range()` are all good candidates, but any function is fine). In a comment in your script,
-   write one sentence explaining what the function does and a plausible reason you might use it.
-
-### What to Hand In
-
-Save all of your commands, in the order you ran them, in a single plain-text or R script file (e.g.
-`yourname_first-steps.R`). Include your comment from step 4 directly in that file.
-
-A teacher reviewing your submission should be able to read straight through your script and see: the objects you
-created, the functions you called and why, evidence that you installed and loaded a package, and your one-sentence
-explanation of an unfamiliar function.
-
-:::
+Congratulations! You've completed the *Add-On Packages* module!
 
 ## Learning Goals
 
 Now that you've completing this module, you should be able to:
-
-### Basic Commands
-
-1. Create simple R objects
-1. Conduct simple mathematical calculations involving R objects
-1. Conduct simple logical comparisons between R objects
-
-### R Functions
-
-1. Recognize the R functions in a section of R code
-1. Give a conceptual overview of how R functions operate
-1. Call R functions to perform calculations on R objects
 
 ### Add-On Packages
 
@@ -68,7 +24,7 @@ Now that you've completing this module, you should be able to:
 1. Load an R package
 1. Use the functions provided by add-on packages
 
-### Getting Help
+### Documentation
 
 1. Access the documentation for functions provided by installed packages
 1. Explain the purpose of the sections in an R help file
@@ -76,12 +32,12 @@ Now that you've completing this module, you should be able to:
 
 ## Next Steps
 
-If you want to continue with your R learning journey, we recommend following the *Data Types* module next. Click the 
-button below to start the next module.
+If you want to continue with your R learning journey, we recommend following the *Matrices & Vectors* module next. Click
+the button below to get started!.
 
 ```{r}
 #| echo: false
 #| results: asis
 
-next_module_button("https://www.openstatprog.com/data-types/index.html")
+next_module_button("https://www.openstatprog.com/matrices-vectors/")
 ```

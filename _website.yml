@@ -28,24 +28,24 @@ website:
     collapse-level: 1
     contents:
       - href: index.qmd
-  #        text: "Overview"
-  #      - section: tutorials/packages/index.qmd
-  #        text: "Packages"
-  #        contents:
-  #          - href: tutorials/packages/installing.qmd
-  #          - href: tutorials/packages/loading.qmd
-  #          - href: quizzes/packages/index.qmd
-  #            text: "Knowledge Quiz"
-  #      - section: tutorials/help/index.qmd
-  #        text: "Documentation"
-  #        contents:
-  #          - href: tutorials/help/access.qmd
-  #          - href: tutorials/help/sections.qmd
-  #          - href: tutorials/help/default_arguments.qmd
-  #          - href: tutorials/help/independent_task.qmd
-  #          - href: quizzes/help/index.qmd
-  #            text: "Knowledge Quiz"
-  #      - href: conclusion.qmd
+        text: "Overview"
+      - section: tutorials/packages/index.qmd
+        text: "Packages"
+        contents:
+          - href: tutorials/packages/installing.qmd
+          - href: tutorials/packages/loading.qmd
+          - href: quizzes/packages/index.qmd
+            text: "Knowledge Quiz"
+      - section: tutorials/help/index.qmd
+        text: "Documentation"
+        contents:
+          - href: tutorials/help/access.qmd
+          - href: tutorials/help/sections.qmd
+          - href: tutorials/help/default_arguments.qmd
+          - href: tutorials/help/independent_task.qmd
+          - href: quizzes/help/index.qmd
+            text: "Knowledge Quiz"
+      - href: conclusion.qmd
 
   page-footer:
     background: primary

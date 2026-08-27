@@ -5,49 +5,100 @@ knitr:
     eval: false
 ---
 
-Installing a package is something you only need to do **once** per computer (much like installing RStudio itself
-only once). In most cases, you only need to give the package's name to the `install.packages()` function. The
-following code installs the **psych** package.
+R packages are just little pieces of software, so you can think about installing R packages just like you'd think about
+installing any other piece of software. Installing a package is something you only need to do **once** per computer
+(much like you only needed to install R once).
+
+To install a new package, we'll typically use the `install.packages()` function. In most cases, you only need to specify
+the package's name as a character string. For example, the following code installs the **psych** package.
 
 ```{r}
-## Install one package
+# Install one package
 install.packages("psych")
 ```
 
-If you want to install more than one package at once, use the `c()` function to combine several package names into a
-single call.
+If you want to install more than one package in a single `install.packages()` call, use the `c()` function to combine
+several package names into a single call (don't forget to quote each name). Below, we're installing the **mice** and
+**lavaan** packages.
 
 ```{r}
-## Install two packages at once
+# Install two packages
 install.packages(c("mice", "lavaan"))
 ```
 
-That's it — those two patterns cover the vast majority of package installs you'll ever need to do.
+That's it: those two patterns cover almost all the package installs you'll ever need to do. Pretty simple, right?
 
-## Common Errors
+::: common-mistakes
 
-A few things commonly trip people up the first time they install a package:
+A few things commonly trip people up when they try to install a package.
 
-- **Misspelling the package name.** `install.packages("ggplot")` (missing the `2`) will fail, because the package is
-  actually called `ggplot2`. R can't guess what you meant, so double-check the spelling against the package's
-  documentation or CRAN page.
-- **Forgetting the quotes.** `install.packages(psych)` (without quotes) tells R to look for an *object* called
-  `psych`, not a package name, and will produce an error. Package names passed to `install.packages()` must be
-  character strings, wrapped in quotes.
-- **No internet connection.** `install.packages()` needs to download the package, so it will fail (often with a
-  fairly cryptic error) if you're offline.
+**Mistake 1:** Misspelling the package name
+
+```{r}
+#| eval: false
+
+install.packages("ggplot")
+```
+
+```{r}
+#| eval: true
+#| echo: false
+#| error: true
+#| warning: true
+
+install.packages("ggplot", lib = "~/")
+```
+
+The code above fails because the package is actually called `ggplot2`. R can't guess what package you want, so the
+install fails. If you see this error, double-check the spelling of the packages name.
+
+**Mistake 2:** Forgetting to quote the package name
+
+```{r}
+#| eval: true
+#| error: true
+#| warning: true
+
+install.packages(psych)
+```
+
+ In the above code, we don't quote the package name, so R looks for an *object* called `psych` in which it will try to
+ find a character string naming a package. There's no object call `psych` in our environment, so search fails which
+ causes the install to fail. Package names passed to `install.packages()` must be character strings: don't forget the
+ quotes!
+
+**Mistake 3:** No internet connection
+
+`install.packages()` needs to download the package from the internet. So, if you're offline, the install will fail with
+a fairly cryptic error message like the one shown below.
+
+```
+Warning: unable to access index for repository https://cran.rstudio.com/src/contrib:
+  cannot open URL 'https://cran.rstudio.com/src/contrib/PACKAGES'
+Warning: unable to access index for repository https://cran.rstudio.com/src/contrib:
+  cannot open URL 'https://cran.rstudio.com/src/contrib/PACKAGES'
+Warning message:
+package ‘mice’ is not available for this version of R
+
+A version of this package for your version of R might be available elsewhere,
+see the ideas at
+https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#Installing-packages 
+```
+
+:::
 
 ::: practice
 
 ## Practice
 
-Use the `install.packages()` function to install the following packages in the default location.
+Use the `install.packages()` function to install the following packages.
 
 - `ggplot2`
 - `dplyr`
 - `haven`
 
 :::: {.panel-tabset}
+
 ## {{< var tab_title.editor >}}
 
 ```{webr-r}
@@ -58,45 +109,68 @@ Use the `install.packages()` function to install the following packages in the d
 ```{r}
 install.packages(c("ggplot2", "dplyr", "haven"))
 ```
+
 ::::
 
 :::
 
-::: {.callout-note}
+::: going-further
 
-## Optional / Going Further: Repositories, Development Versions, and Library Locations
+Everything above covers what you need for day-to-day R usage. This box covers a few more advanced topics that may come
+in handy as you progress in your R journey. You don't need to master these ideas now.
 
-Everything above covers what you need for day-to-day work. This box covers a few more advanced topics you can come back to later if you ever need them.
+### CRAN Mirrors
 
-**Where packages come from.** By default, `install.packages()` downloads packages from the *Comprehensive R Archive
-Network* (CRAN). This is a global network of servers ("mirrors") that each host a complete copy of all published R packages.RStudio automatically picks a sensible default mirror, so you don't normally need to specify one. If you ever want to set one explicitly, you can do so via the `repos` argument.
+By default, `install.packages()` downloads packages from the *Comprehensive R Archive Network* (CRAN): a global network
+of servers ("mirrors") that each host a complete copy of all published R packages. RStudio automatically picks a
+sensible default mirror, so you don't normally need to specify one. If you ever want to select a particular CRAN mirror,
+you can do so via the `repos` argument.
 
 ```{r}
-## Explicitly specify a CRAN mirror
+# Explicitly specify a CRAN mirror
 install.packages(c("lattice", "gridExtra"), repos = "https://cloud.r-project.org")
 ```
 
-**Other repositories.** Occasionally, a package you need lives outside CRAN. Some other popular repositories include
+### Alternative Repositories
+
+Occasionally, a package you need lives outside CRAN. Some other popular repositories include
 [Bioconductor](https://www.bioconductor.org/packages/release/BiocViews.html#___Software) (specialized bioinformatics
 packages) and [R-Universe](https://r-universe.dev/search).
 
-**Installing development versions.** Package developers often share in-progress work on code-hosting platforms like
-[GitHub](https://github.com). The [**remotes**](https://cran.r-project.org/web/packages/remotes/index.html) package
-lets you install directly from a GitHub repository, which sometimes gets you bug fixes or new features before they
-reach CRAN.
+### Installing Development Versions
+
+Package developers often share in-progress work on code-hosting platforms like [GitHub](https://github.com). A package's
+development version may have new features or bug fixes that are not yet available in the production version released
+through CRAN. The [**remotes**](https://cran.r-project.org/web/packages/remotes/index.html) package lets you install an
+R package directly from a GitHub repository.
 
 ```{r}
-## Install the development version of the mice package from GitHub
+# Install the development version of the mice package from GitHub
 remotes::install_github("amices/mice")
 ```
 
-**Choosing a library location.** R usually figures out on its own where to install packages, prompting you if it
-needs a different location (e.g. because you lack write permission somewhere). You can also specify this explicitly
+### Installing in a Non-Standard Location
+
+Typically, R will automatically choose the location in which to install packages and prompt you if it needs to use a
+different location (e.g. because you lack write permissions for the original location). To see a list of all the
+locations where R will try to install packages, run the `.libPaths()` function.
+
+```{r}
+.libPaths()
+```
+
+```
+[1] "/home/alice/R/library/4.5"  "/home/alice/R/ide/4.5"
+[3] "/opt/R/4.5.3/lib/R/library"
+```
+
+If you know that you want to install a package outside the normal location (e.g., because your employer doesn't allow
+you to install software outside of your user's home directory), you can explicitly specify the installation directory
 with the `lib` argument.
 
 ```{r}
-## Install into a specific, non-default directory
-install.packages("mvtnorm", lib = "../software")
+# Install the mvtnorm package into a specific, non-default directory
+install.packages("mvtnorm", lib = "~/software/r_packages")
 ```
 
 :::

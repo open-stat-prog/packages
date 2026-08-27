@@ -6,10 +6,8 @@ webr:
   autoload-packages: false
 ---
 
-## How to Open a Help File
-
 The simplest way to access a function's help file is to prepend the function name (without parentheses) with the `?`
-character. The following code will pull up the documentation for the `lm()` function.
+character. For example, the following code will pull up the documentation for the `lm()` function.
 
 ::: {.column-margin}
 
@@ -21,13 +19,17 @@ character. The following code will pull up the documentation for the `lm()` func
 
 :::
 
-```{r, eval = FALSE}
+**Do:** Run the following code to open the help file for the `lm()` function.
+
+```{webr-r}
 ?lm
 ```
 
 You can achieve the same effect by providing the function name to the `help()` function.
 
-```{r, eval = FALSE}
+```{r}
+#| eval: false
+
 help(lm)
 help("lm")
 ```
@@ -35,19 +37,25 @@ help("lm")
 A function's help file comes from the package that provides the function. So, you typically cannot access the help file
 for a function until you've loaded the package that provides that function.
 
-For example, the following code will produce an error because we're trying to access the documentation for `arrange()`,
-but we haven't yet loaded the **dplyr** package that provides the `arrange()` function.
+**Do:** Run the following code, and take note of the results. What went wrong?
 
-```{r, error = TRUE}
+
+```{webr-r}
 ?arrange
 ```
+
+::: explanation
+
+The code will produces an error because we're trying to access the documentation for `arrange()`, but we haven't yet
+loaded the **dplyr** package that provides the `arrange()` function.
+
+:::
 
 We can still access the help files for functions provided by an unloaded package, though. We just have to tell R which
 package provides the function (and, hence, where to look for the help file). To do so, either use the *namespace
 resolution operator*, `::`, or provide a value for the `package` argument in the `help()` function.
 
-The following two code chunks should run without errors, because we've told R to search for the `arrange()` documentation
-in the **dplyr** package
+**Do:** Run the following two code chunks. Why do these commands run successfully?
 
 ```{webr-r}
 ?dplyr::arrange
@@ -57,9 +65,14 @@ in the **dplyr** package
 help(arrange, package = "dplyr")
 ```
 
-::: practice
+::: explanation
 
-## Practice
+Both commands run without errors, because we've told R to search for the `arrange()` documentation in the **dplyr**
+package
+
+:::
+
+::: practice
 
 Access the help file for the `vector()` function.
 
@@ -67,6 +80,7 @@ Access the help file for the `vector()` function.
 1. What is the default value of the `mode` argument?
 
 :::: {.panel-tabset}
+
 ## {{< var tab_title.editor >}}
 
 ```{webr-r}
@@ -96,12 +110,12 @@ library(printr)
 
 :::
 
-## Quick Check
+::: knowledge-check
 
-- What are the two ways to open a function's help file?
-- If you get an error opening a help file with `?some_function`, what's the most likely reason?
+- What are two ways to open a function's help file?
+- If you get an error opening a help file with `?some_function`, what's one possible reason?
 
 ```{webr-r}
 ```
 
-<!--------------------------------------------------------------------------------------------------------------------->
+:::

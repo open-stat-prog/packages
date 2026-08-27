@@ -2,35 +2,34 @@
 title: "Documentation"
 ---
 
+Every function that ships with R, and every function provided by a package distributed through CRAN, must come with
+**documentation** (also called a "help file"). This documentation describing exactly what the function does, what
+arguments it accepts, and what default values have been defined for those arguments. No matter how long you work with R,
+you will still consult documentation files regularly. Even experienced R users read the help files for functions they've
+used hundreds of times, just to double check an argument name or default value.
+
 ## Why Documentation Matters
 
-By now, you've called quite a few R functions: `mean()`, `round()`, `sum()`, `install.packages()`, `library()`, and
+By now, you've called quite a few R functions: `mean()`, `round()`, `sum()`, `install.packages()`, `library()`, and many
 more. Every one of those functions accepts specific arguments, in a specific order, and some of those arguments have
-default values you've been relying on without necessarily realizing it.
+default values that you've been relying on without necessarily realizing it.
 
-**Do:** run the code below.
+**Do:** Run the code below, and compare the two results.
 
 ```{webr-r}
 round(3.14159, 2)
 round(3.14159)
 ```
 
-**See:** the second line still works, even though we only gave `round()` one input.
+**See:** Notice that the second line still works, even though we only gave `round()` one input.
 
-**Explain:** `round()`'s second argument, `digits`, has a *default value* built in, so R uses that default whenever
-you don't specify your own. But how would you know that, or know what that default value actually is, without
-someone telling you?
+The second argument to `round()`, `digits`, has a *default value* predefined. R uses that default to set the `digits`
+value whenever you don't specify your own. But how are you supposed to know that there's a default value set for
+`digits`, or know what that value actually is? Well, that's exactly the kind of problem that documentation solves.
 
-That's exactly what **documentation** (also called a "help file") is for. Every function that ships with R, and every
-function provided by a package distributed through CRAN, comes with documentation describing exactly what it does,
-what arguments it accepts, and what those arguments default to. You will refer to documentation constantly. Even
-experienced R users look up help files for functions they've used hundreds of times, just to double check an argument
-name or default value.
+:::knowledge-check
 
-Over this tutorial, you'll learn how to open a function's documentation, how to read the sections it contains, and
-how to use that information to correctly call a function you've never seen before.
+Besides looking up default argument values, what's one other reason you might want to check a function's documentation
+before using that function?
 
-## Quick Check
-
-Besides looking up default argument values, what's one other reason you might want to check a function's
-documentation before using it?
+:::

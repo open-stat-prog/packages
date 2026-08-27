@@ -9,29 +9,22 @@ knitr:
 library(printr)
 ```
 
-You've now practiced opening help files, reading their sections, and using them to figure out argument order and
-default values with some guidance along the way. This page works the same muscle, but without the step-by-step
-scaffolding. You're on your own this time, the same way you would be when you encounter an unfamiliar function in
-your own work.
+You've now practiced opening help files, reading their sections, and using them to figure out argument order and default
+values, with some guidance along the way. This page works the same muscle, but without the step-by-step scaffolding.
+You're on your own this time, the same way you will be when you encounter an unfamiliar function in your own work.
 
 ::: practice
 
-## Independent Task
-
 The `strsplit()` function is part of Base R, so it's available without loading any additional packages. You haven't
-used it anywhere in this module. Using only its help file, answer the following:
-
-1. What does `strsplit()` do, in one sentence?
-1. What are its arguments called, and in what order are they specified?
-1. Does any argument have a default value? If so, what is it?
-1. Write a function call that splits the text `"apple,banana,cherry"` into its three individual words, using the
-   comma as the split point.
+used it anywhere in this module. Using only its help file, answer the following questions.
 
 :::: {.panel-tabset}
+
 ## {{< var tab_title.question >}}
 
-Open `strsplit()`'s help file however you'd like, and work through the four questions above before checking the
-solution.
+1. Provide a one-sentence description of what `strsplit()` does.
+1. What are the argument names; in what order are the arguments specified?
+1. What arguments have default values, and what are those values?
 
 ## {{< var tab_title.solution >}}
 
@@ -39,14 +32,33 @@ solution.
 ?strsplit
 ```
 
-1. `strsplit()` splits the elements of a character vector into substrings, according to a specified splitting
-   character or pattern.
-1. Its arguments are `x`, `split`, `fixed`, `perl`, and `useBytes`, specified in that order.
-1. `fixed`, `perl`, and `useBytes` all default to `FALSE`. `x` and `split` have no defaults — you must supply them.
-1.
-   ```{r}
-   strsplit("apple,banana,cherry", split = ",")
-   ```
+1. `strsplit()` uses a pattern matching to split a character vector into substrings.
+1. The arguments are `x`, `split`, `fixed`, `perl`, and `useBytes`, specified in that order.
+1. `fixed`, `perl`, and `useBytes` all default to `FALSE`.
+
+::::
+
+:::
+
+::: practice
+
+Write a function call that splits the text `"apple,banana,cherry"` into the three individual words: `"apple"`, `"banana"`,
+`"cherry"`.
+
+:::: {.panel-tabset}
+
+## {{< var tab_title.editor >}}
+
+```{webr-r}
+"apple,banana,cherry"
+```
+
+## {{< var tab_title.solution >}}
+
+```{r}
+strsplit("apple,banana,cherry", split = ",")
+```
+
 ::::
 
 :::
@@ -55,15 +67,14 @@ solution.
 
 ## Ready to Continue?
 
-You've now completed the *Documentation* tutorial. You're ready to move on if you can:
+You're ready to progress if you can:
 
-- Explain why documentation matters, even for functions you already know how to call.
+- Explain why documentation is useful, even for functions you already know how to call.
 - Open a function's help file, whether or not the providing package is already loaded.
-- Identify the *Usage*, *Arguments*, and *Examples* sections of a help file, and explain what each contains.
-- Use a help file to correctly call a function you've never used before, entirely on your own.
+- Identify the *Description*, *Usage*, *Arguments*, *Details*, *Value*, and *Examples* sections of a help file, and
+explain what each contains.
+- Use a help file to find the information that you need to correctly call a function you've never used before.
 
-If any of these still feel shaky, revisit the relevant page above, or try the
-[Knowledge Quiz](/quizzes/help/index.qmd) to pinpoint exactly where to focus. Once you're ready, head to the
-[Conclusion](/conclusion.qmd) page to find this module's hand-in assignment.
+Take the [Knowledge Quiz](/quizzes/help/index.qmd) to evaluate your learning.
 
 :::

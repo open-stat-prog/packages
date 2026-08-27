@@ -1,5 +1,6 @@
 Question
 ========
+
 ```{r, echo = FALSE, include = FALSE}
 library(printr)
 ```
@@ -9,10 +10,12 @@ Use the following help file excerpt to answer the question below.
 ```{r, echo = FALSE, printr.help.sections = "usage"}
 ?cor
 ```
-What is the default value for the `use` argument of the `cor()` function?
+
+What is the default value for the `cor()` function's `use` argument?
 
 Answerlist
 ----------
+
 * `"everything"`
 * `"Everything`
 * `"spearman"`
@@ -27,10 +30,12 @@ Answerlist
 
 Solution
 ========
+
 The default value for the `use` argument is `"everything"`.
 
 Answerlist
 ----------
+
 * Correct
 * Wrong: The "E" should be lowercase
 * Wrong: This is one of the possible methods
@@ -45,6 +50,7 @@ Answerlist
 
 Meta-information
 ================
+
 exname: Default Arguments Selection
 extype: schoice
 exsolution: 10000000000
