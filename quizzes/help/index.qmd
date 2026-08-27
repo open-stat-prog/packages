@@ -1,15 +1,7 @@
 ---
-title: "Knowledge Quiz: Getting Help"
+title: "Knowledge Quiz: Documentation"
 ---
 
-::: {.column-margin}
-
-:::: {.callout-note}
-- Click the check-mark button to check your answer.
-- Click the question-mark button to see an explanation of the solution.
-::::
-
-:::
 
 ```{r help_quiz}
 #| echo: FALSE
@@ -25,3 +17,14 @@ exams2forms::exams2forms(
   edir = here::here("quizzes", "help", "questions")
 )
 ```
+
+::: {.column-margin}
+
+:::: {.callout-note}
+
+- Click the check-mark button to check your answer.
+- Click the question-mark button to see an explanation of the solution.
+
+::::
+
+:::

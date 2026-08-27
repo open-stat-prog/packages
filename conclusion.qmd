@@ -24,7 +24,7 @@ Now that you've completing this module, you should be able to:
 1. Load an R package
 1. Use the functions provided by add-on packages
 
-### Getting Help
+### Documentation
 
 1. Access the documentation for functions provided by installed packages
 1. Explain the purpose of the sections in an R help file

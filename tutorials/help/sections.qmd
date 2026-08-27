@@ -42,14 +42,25 @@ this section provides several crucial pieces of information.
 
 ## Arguments
 
+::: {.column-margin}
+
+:::: {.callout-note}
+
+The *Usage* and *Arguments* sections will
+probably be the ones you reference most frequently. These two sections provide all the information you'll need to use
+most functions.
+
+::::
+
+:::
+
 ```{=html}
 
 {{< include /assets/docs/arrange_arguments.html >}}
 
 ```
 
-The *Arguments* section briefly explains each function argument. As you might suspect, the arguments section will probably
-be the one you reference most frequently since the information contained herein explains the purpose or each function
+The *Arguments* section briefly explains each function argument. This section explains the purpose of each function
 argument and what type of values you are able to specify for each argument.
 
 ## Details
@@ -61,7 +72,7 @@ argument and what type of values you are able to specify for each argument.
 ```
 
 The *Details* section expands on the information listed in the *Arguments* section to provide additional details of
-function arguments or the functions behavior
+function arguments or the function's behavior
 
 ## Value
 
@@ -90,6 +101,7 @@ The *Examples* section contains executable R code that demonstrates the function
 Run the first line of example code from the *Examples* section of the `arrange()` documentation shown above.
 
 :::: {.panel-tabset}
+
 ## {{< var tab_title.editor >}}
 
 ```{webr-r}
@@ -97,7 +109,7 @@ Run the first line of example code from the *Examples* section of the `arrange()
 
 ## {{< var tab_title.hint >}}
 
-You can copy and paste the first line of code directly from the examples section into the editor window.
+You can copy and paste the code directly from the examples section into the editor window.
 
 ## {{< var tab_title.solution >}}
 
@@ -110,10 +122,12 @@ arrange(mtcars, cyl, disp)
 
 :::
 
-## Quick Check
+::: knowledge-check
 
-Which section would you check to find...
+Which section of the help file would you check to find the following information.
 
-- ...a function's default argument values?
-- ...a short, plain-language summary of what a function does?
-- ...working example code you can copy and adapt?
+- A function's default argument values?
+- A short, plain-language summary of what a function does?
+- Working example code that you can copy and adapt?
+
+:::

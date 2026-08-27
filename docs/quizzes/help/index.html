@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Knowledge Quiz: Getting Help – Add-On Packages</title>
+<title>Knowledge Quiz: Documentation – Add-On Packages</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../conclusion.html" rel="next">
+<link href="../../tutorials/help/independent_task.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -69,43 +71,30 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>
-div.callout-practice.callout {
-  border-left-color: green;
+div.callout-reading-advanced.callout {
+  border-left-color: red;
 }
-div.callout-practice.callout-style-default > .callout-header {
-  background-color: rgb(from green r g b / 13%);
+div.callout-reading-advanced.callout-style-default > .callout-header {
+  background-color: rgb(from red r g b / 13%);
 }
-div.callout-practice .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-practice.callout-style-default .callout-icon::before, div.callout-practice.callout-titled .callout-icon::before {
+div.callout-reading-advanced .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-reading-advanced.callout-style-default .callout-icon::before, div.callout-reading-advanced.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
-  content: '\f085' !important;
+  content: '\f518' !important;
   background-image: none;
 }
-div.callout-common-mistakes.callout {
-  border-left-color: #B01919;
+div.callout-going-further.callout {
+  border-left-color: #B58900;
 }
-div.callout-common-mistakes.callout-style-default > .callout-header {
-  background-color: rgba(176, 25, 25, 0.13);
+div.callout-going-further.callout-style-default > .callout-header {
+  background-color: rgba(181, 137, 0, 0.13);
 }
-div.callout-common-mistakes .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-common-mistakes.callout-style-default .callout-icon::before, div.callout-common-mistakes.callout-titled .callout-icon::before {
+div.callout-going-further .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-going-further.callout-style-default .callout-icon::before, div.callout-going-further.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
-  content: '\f188' !important;
-  background-image: none;
-}
-div.callout-knowledge-check.callout {
-  border-left-color: #368FFF;
-}
-div.callout-knowledge-check.callout-style-default > .callout-header {
-  background-color: rgba(54, 143, 255, 0.13);
-}
-div.callout-knowledge-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-knowledge-check.callout-style-default .callout-icon::before, div.callout-knowledge-check.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f044' !important;
+  content: '\f4d7' !important;
   background-image: none;
 }
 div.callout-reading.callout {
@@ -134,32 +123,6 @@ div.callout-completion-time.callout-style-default .callout-icon::before, div.cal
   content: '\f2f2' !important;
   background-image: none;
 }
-div.callout-going-further.callout {
-  border-left-color: #B58900;
-}
-div.callout-going-further.callout-style-default > .callout-header {
-  background-color: rgba(181, 137, 0, 0.13);
-}
-div.callout-going-further .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-going-further.callout-style-default .callout-icon::before, div.callout-going-further.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f4d7' !important;
-  background-image: none;
-}
-div.callout-reading-advanced.callout {
-  border-left-color: red;
-}
-div.callout-reading-advanced.callout-style-default > .callout-header {
-  background-color: rgb(from red r g b / 13%);
-}
-div.callout-reading-advanced .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-reading-advanced.callout-style-default .callout-icon::before, div.callout-reading-advanced.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f518' !important;
-  background-image: none;
-}
 div.callout-explanation.callout {
   border-left-color: violet;
 }
@@ -186,6 +149,45 @@ div.callout-resource.callout-style-default .callout-icon::before, div.callout-re
   content: '\f0c1' !important;
   background-image: none;
 }
+div.callout-common-mistakes.callout {
+  border-left-color: #B01919;
+}
+div.callout-common-mistakes.callout-style-default > .callout-header {
+  background-color: rgba(176, 25, 25, 0.13);
+}
+div.callout-common-mistakes .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-common-mistakes.callout-style-default .callout-icon::before, div.callout-common-mistakes.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f188' !important;
+  background-image: none;
+}
+div.callout-practice.callout {
+  border-left-color: green;
+}
+div.callout-practice.callout-style-default > .callout-header {
+  background-color: rgb(from green r g b / 13%);
+}
+div.callout-practice .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-practice.callout-style-default .callout-icon::before, div.callout-practice.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f085' !important;
+  background-image: none;
+}
+div.callout-knowledge-check.callout {
+  border-left-color: #368FFF;
+}
+div.callout-knowledge-check.callout-style-default > .callout-header {
+  background-color: rgba(54, 143, 255, 0.13);
+}
+div.callout-knowledge-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-knowledge-check.callout-style-default .callout-icon::before, div.callout-knowledge-check.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f044' !important;
+  background-image: none;
+}
 </style>
 
 
@@ -210,7 +212,7 @@ div.callout-resource.callout-style-default .callout-icon::before, div.callout-re
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="../../index.html" aria-current="page"> 
-<span class="menu-text">In Progress</span></a>
+<span class="menu-text">Add-On Packages</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -238,7 +240,7 @@ div.callout-resource.callout-style-default .callout-icon::before, div.callout-re
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Knowledge Quiz: Getting Help</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tutorials/help/index.html">Documentation</a></li><li class="breadcrumb-item"><a href="../../quizzes/help/index.html">Knowledge Quiz</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -253,7 +255,83 @@ div.callout-resource.callout-style-default .callout-icon::before, div.callout-re
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">In Progress</span></a>
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../tutorials/packages/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Packages</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tutorials/packages/installing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Installing Packages</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tutorials/packages/loading.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Loading Packages</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../quizzes/packages/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Knowledge Quiz</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../tutorials/help/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Documentation</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tutorials/help/access.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Accessing Help Files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tutorials/help/sections.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Help File Sections</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tutorials/help/default_arguments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Argument Order &amp; Defaults</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tutorials/help/independent_task.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Independent Task</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../quizzes/help/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Knowledge Quiz</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Conclusion</span></a>
   </div>
 </li>
     </ul>
@@ -267,9 +345,9 @@ div.callout-resource.callout-style-default .callout-icon::before, div.callout-re
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tutorials/help/index.html">Documentation</a></li><li class="breadcrumb-item"><a href="../../quizzes/help/index.html">Knowledge Quiz</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Knowledge Quiz: Getting Help</h1>
+<h1 class="title">Knowledge Quiz: Documentation</h1>
 </div>
 
 
@@ -286,30 +364,12 @@ div.callout-resource.callout-style-default .callout-icon::before, div.callout-re
 </header>
 
 
-
-<div class="no-row-height column-margin column-container"><div class="">
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Click the check-mark button to check your answer.</li>
-<li>Click the question-mark button to see an explanation of the solution.</li>
-</ul>
-</div>
-</div>
-</div></div><div class="cell" data-layout-align="center">
+<div class="cell" data-layout-align="center">
 <div class="webex-question">
 <div class="webex-check webex-box">
-<p>Which section of an R package help file would you reference to learn the order in which the function arguments are specified in the function definition?</p>
-<div id="webex-fef1e43e77902e8c601614d3c4b6c778" class="webex-radiogroup" data-answer="PVVKAUkFH1UbB2Q=">
-<label><input type="radio" autocomplete="off" name="fef1e43e77902e8c601614d3c4b6c778"><span>Value</span></label><label><input type="radio" autocomplete="off" name="fef1e43e77902e8c601614d3c4b6c778"><span>Arguments</span></label><label><input type="radio" autocomplete="off" name="fef1e43e77902e8c601614d3c4b6c778"><span>Usage</span></label><label><input type="radio" autocomplete="off" name="fef1e43e77902e8c601614d3c4b6c778"><span>Description</span></label><label><input type="radio" autocomplete="off" name="fef1e43e77902e8c601614d3c4b6c778"><span>See Also</span></label>
+<p>Which section of a help file would you reference to learn the order in which a function’s arguments are specified?</p>
+<div id="webex-ace12778afcd90b4d183ebc20e4c24c4" class="webex-radiogroup" data-answer="OlNJAR4HGwhNVz4=">
+<label><input type="radio" autocomplete="off" name="ace12778afcd90b4d183ebc20e4c24c4"><span>Value</span></label><label><input type="radio" autocomplete="off" name="ace12778afcd90b4d183ebc20e4c24c4"><span>Arguments</span></label><label><input type="radio" autocomplete="off" name="ace12778afcd90b4d183ebc20e4c24c4"><span>Description</span></label><label><input type="radio" autocomplete="off" name="ace12778afcd90b4d183ebc20e4c24c4"><span>Examples</span></label><label><input type="radio" autocomplete="off" name="ace12778afcd90b4d183ebc20e4c24c4"><span>Usage</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -318,9 +378,9 @@ Note
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
-<p>Which section of an R package help file would you reference to learn the default values for a function’s arguments.</p>
-<div id="webex-e5a33b1f18d47033d60416ff405ccc6e" class="webex-radiogroup" data-answer="PgVNAx9THVYdCDk=">
-<label><input type="radio" autocomplete="off" name="e5a33b1f18d47033d60416ff405ccc6e"><span>Examples</span></label><label><input type="radio" autocomplete="off" name="e5a33b1f18d47033d60416ff405ccc6e"><span>Details</span></label><label><input type="radio" autocomplete="off" name="e5a33b1f18d47033d60416ff405ccc6e"><span>Arguments</span></label><label><input type="radio" autocomplete="off" name="e5a33b1f18d47033d60416ff405ccc6e"><span>Description</span></label><label><input type="radio" autocomplete="off" name="e5a33b1f18d47033d60416ff405ccc6e"><span>See Also</span></label>
+<p>Which section of a help file would you reference to learn the default values of a function’s arguments.</p>
+<div id="webex-6a35c443874a7ea9639708e6a899bf01" class="webex-checkboxgroup" data-answer="bVAfBU8EGAMUB2k=">
+<label><input type="checkbox" autocomplete="off" name="6a35c443874a7ea9639708e6a899bf01"><span>Usage</span></label><label><input type="checkbox" autocomplete="off" name="6a35c443874a7ea9639708e6a899bf01"><span>Details</span></label><label><input type="checkbox" autocomplete="off" name="6a35c443874a7ea9639708e6a899bf01"><span>Examples</span></label><label><input type="checkbox" autocomplete="off" name="6a35c443874a7ea9639708e6a899bf01"><span>See Also</span></label><label><input type="checkbox" autocomplete="off" name="6a35c443874a7ea9639708e6a899bf01"><span>Value</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -366,36 +426,36 @@ cov2cor(V)
 </div>
 </div>
 </div>
-<p>What is the default value for the <code>use</code> argument of the <code>cor()</code> function?</p>
-<div id="webex-8fdef00d7aa2626c631bf4d9f72940d6" class="webex-radiogroup" data-answer="Y1ZIVUoBHFQbUTw=">
-<label><input type="radio" autocomplete="off" name="8fdef00d7aa2626c631bf4d9f72940d6"><span><code>x</code></span></label><label><input type="radio" autocomplete="off" name="8fdef00d7aa2626c631bf4d9f72940d6"><span><code>method</code></span></label><label><input type="radio" autocomplete="off" name="8fdef00d7aa2626c631bf4d9f72940d6"><span><code>"everything"</code></span></label><label><input type="radio" autocomplete="off" name="8fdef00d7aa2626c631bf4d9f72940d6"><span><code>"kendall"</code></span></label><label><input type="radio" autocomplete="off" name="8fdef00d7aa2626c631bf4d9f72940d6"><span>The <code>use</code> argument does not have a defined default value.</span></label>
+<p>What is the default value for the <code>cor()</code> function’s <code>use</code> argument?</p>
+<div id="webex-823b6315ac33e5125885a92baf5e9b6a" class="webex-radiogroup" data-answer="YwIfUhoDHQVNUm4=">
+<label><input type="radio" autocomplete="off" name="823b6315ac33e5125885a92baf5e9b6a"><span><code>c("pearson", "spearman", "kendall")</code></span></label><label><input type="radio" autocomplete="off" name="823b6315ac33e5125885a92baf5e9b6a"><span>The <code>use</code> argument does not have a defined default value.</span></label><label><input type="radio" autocomplete="off" name="823b6315ac33e5125885a92baf5e9b6a"><span><code>x</code></span></label><label><input type="radio" autocomplete="off" name="823b6315ac33e5125885a92baf5e9b6a"><span><code>"Everything</code></span></label><label><input type="radio" autocomplete="off" name="823b6315ac33e5125885a92baf5e9b6a"><span><code>"everything"</code></span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>The default value for the <code>use</code> argument is <code>"everything"</code>.</p>
 <ul>
-<li>Wrong: This is an argument name</li>
-<li>Wrong: This is an argument name</li>
-<li>Correct</li>
-<li>Wrong: This is one of the possible methods</li>
+<li>Wrong: These are all of the possible methods</li>
 <li>Wrong: There is a default value defined for <code>use</code>.</li>
+<li>Wrong: This is an argument name</li>
+<li>Wrong: The “E” should be lowercase</li>
+<li>Correct</li>
 </ul>
 </div>
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
-<p>The <strong>dplyr</strong> package is installed on your computer, but you have not loaded it in your current R session. Which of the following will successfully open the help file for dplyr’s <code>arrange()</code> function?</p>
-<div id="webex-d21fe0625ee35f9ba40397978edd94d8" class="webex-checkboxgroup" data-answer="PwIdV0kAGgIZVDg=">
-<label><input type="checkbox" autocomplete="off" name="d21fe0625ee35f9ba40397978edd94d8"><span><code>help(arrange)</code></span></label><label><input type="checkbox" autocomplete="off" name="d21fe0625ee35f9ba40397978edd94d8"><span><code>?dplyr::arrange</code></span></label><label><input type="checkbox" autocomplete="off" name="d21fe0625ee35f9ba40397978edd94d8"><span><code>arrange()</code></span></label><label><input type="checkbox" autocomplete="off" name="d21fe0625ee35f9ba40397978edd94d8"><span><code>?arrange</code></span></label><label><input type="checkbox" autocomplete="off" name="d21fe0625ee35f9ba40397978edd94d8"><span><code>help(arrange, package = "dplyr")</code></span></label>
+<p>Suppose you have the <strong>dplyr</strong> package installed on your computer, but you have not loaded it in your current R session. Which of the following commands will open the help file for dplyr’s <code>arrange()</code> function?</p>
+<div id="webex-8f3cb5ce09bb559df6b09945e3882340" class="webex-checkboxgroup" data-answer="Y1YfU04ET1UcCT8=">
+<label><input type="checkbox" autocomplete="off" name="8f3cb5ce09bb559df6b09945e3882340"><span><code>dplyr::arrange()</code></span></label><label><input type="checkbox" autocomplete="off" name="8f3cb5ce09bb559df6b09945e3882340"><span><code>arrange()</code></span></label><label><input type="checkbox" autocomplete="off" name="8f3cb5ce09bb559df6b09945e3882340"><span><code>help(arrange, package = "dplyr")</code></span></label><label><input type="checkbox" autocomplete="off" name="8f3cb5ce09bb559df6b09945e3882340"><span><code>?arrange</code></span></label><label><input type="checkbox" autocomplete="off" name="8f3cb5ce09bb559df6b09945e3882340"><span><code>?arrange::dplyr</code></span></label>
 </div>
 </div>
 <div class="webex-solution">
 <ul>
-<li>Incorrect: without the <code>package</code> argument or <code>::</code>, R can’t find <code>arrange()</code> if dplyr isn’t loaded, so this errors.</li>
-<li>Correct: the namespace resolution operator (<code>::</code>) tells R exactly which package to search, even if it isn’t loaded.</li>
-<li>Incorrect: this attempts to call the function (which would also fail, since dplyr isn’t loaded), not open its help file.</li>
-<li>Incorrect: without loading dplyr first, R doesn’t know which package’s <code>arrange()</code> you mean, so this errors.</li>
-<li>Correct: explicitly naming the <code>package</code> argument works the same way as <code>::</code>.</li>
+<li><strong>No:</strong> This line calls the function (which will succeed, since we’ve used <code>::</code> to tell R to look for <code>arrange()</code> in the <strong>dplyr</strong> package), but we’re not opening any help file.</li>
+<li><strong>No:</strong> This line attempts to call the function (which would also fail, since <strong>dplyr</strong> isn’t loaded), not open its help file.</li>
+<li><strong>Yes:</strong> Explicitly naming the <code>package</code> argument tells R which package to search for help files.</li>
+<li><strong>No:</strong> Without loading <strong>dplyr</strong> first, R doesn’t have access to any function called <code>arrange()</code> or its help files.</li>
+<li><strong>No:</strong> The function name and package name are switched. This command looks for the help file for a function called <code>dplyr()</code> provided by the <strong>arrange</strong> package.</li>
 </ul>
 </div>
 </div>
@@ -403,7 +463,25 @@ cov2cor(V)
 
 
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Click the check-mark button to check your answer.</li>
+<li>Click the question-mark button to see an explanation of the solution.</li>
+</ul>
+</div>
+</div>
+</div></div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -831,6 +909,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../tutorials/help/independent_task.html" class="pagination-link" aria-label="Independent Task">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Independent Task</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../conclusion.html" class="pagination-link" aria-label="Conclusion">
+        <span class="nav-page-text">Conclusion</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

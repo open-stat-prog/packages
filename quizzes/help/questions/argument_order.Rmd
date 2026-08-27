@@ -1,12 +1,13 @@
 Question
 ========
-Which section of an R package help file would you reference to learn the order in which the function arguments are
-specified in the function definition?
+
+Which section of a help file would you reference to learn the order in which a function's arguments are specified?
 
 Answerlist
 ----------
-* Description
+
 * Usage
+* Description
 * Arguments
 * Details
 * Value
@@ -15,11 +16,13 @@ Answerlist
 
 Solution
 ========
+
 The *Usage* section shows all the possible arguments for a function and the order in which those arguments are defined.
 
 Meta-information
 ================
+
 exname: Argument Order
 extype: schoice
-exsolution: 0100000
+exsolution: 1000000
 exshuffle: 5

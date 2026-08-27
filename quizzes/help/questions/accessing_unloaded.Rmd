@@ -1,30 +1,45 @@
 Question
 ========
-The **dplyr** package is installed on your computer, but you have not loaded it in your current R session. Which of
-the following will successfully open the help file for dplyr's `arrange()` function?
+
+Suppose you have the **dplyr** package installed on your computer, but you have not loaded it in your current R session.
+Which of the following commands will open the help file for dplyr's `arrange()` function?
 
 Answerlist
 ----------
-* `?arrange`
+
 * `?dplyr::arrange`
 * `help(arrange, package = "dplyr")`
+* `?arrange`
 * `help(arrange)`
 * `arrange()`
+* `dplyr::arrange()`
+* `help(dplyr, package = "arrange")`
+* `?arrange::dplyr`
 
 Solution
 ========
 
 Answerlist
 ----------
-* Incorrect: without loading dplyr first, R doesn't know which package's `arrange()` you mean, so this errors.
-* Correct: the namespace resolution operator (`::`) tells R exactly which package to search, even if it isn't loaded.
-* Correct: explicitly naming the `package` argument works the same way as `::`.
-* Incorrect: without the `package` argument or `::`, R can't find `arrange()` if dplyr isn't loaded, so this errors.
-* Incorrect: this attempts to call the function (which would also fail, since dplyr isn't loaded), not open its help file.
+
+* **Yes:** The namespace resolution operator (`::`) tells R exactly which package to search for help files.
+* **Yes:** Explicitly naming the `package` argument tells R which package to search for help files.
+* **No:** Without loading **dplyr** first, R doesn't have access to any function called `arrange()` or its help files.
+* **No:** Without the `package` argument or `::`, R can't find `arrange()` if **dplyr** isn't loaded, so this call
+errors.
+* **No:** This line attempts to call the function (which would also fail, since **dplyr** isn't loaded), not open its
+help file.
+* **No:** This line calls the function (which will succeed, since we've used `::` to tell R to look for `arrange()` in
+the **dplyr** package), but we're not opening any help file.
+* **No:** The function name and package name are switched. This command looks for the help file for a function called
+`dplyr()` provided by the **arrange** package.
+* **No:** The function name and package name are switched. This command looks for the help file for a function called
+`dplyr()` provided by the **arrange** package.
 
 Meta-information
 ================
+
 exname: Accessing Unloaded Package Help
 extype: mchoice
-exsolution: 01100
-exshuffle: TRUE
+exsolution: 11000000
+exshuffle: 5
