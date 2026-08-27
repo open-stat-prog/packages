@@ -1,0 +1,30 @@
+Question
+========
+The **dplyr** package is installed on your computer, but you have not loaded it in your current R session. Which of
+the following will successfully open the help file for dplyr's `arrange()` function?
+
+Answerlist
+----------
+* `?arrange`
+* `?dplyr::arrange`
+* `help(arrange, package = "dplyr")`
+* `help(arrange)`
+* `arrange()`
+
+Solution
+========
+
+Answerlist
+----------
+* Incorrect: without loading dplyr first, R doesn't know which package's `arrange()` you mean, so this errors.
+* Correct: the namespace resolution operator (`::`) tells R exactly which package to search, even if it isn't loaded.
+* Correct: explicitly naming the `package` argument works the same way as `::`.
+* Incorrect: without the `package` argument or `::`, R can't find `arrange()` if dplyr isn't loaded, so this errors.
+* Incorrect: this attempts to call the function (which would also fail, since dplyr isn't loaded), not open its help file.
+
+Meta-information
+================
+exname: Accessing Unloaded Package Help
+extype: mchoice
+exsolution: 01100
+exshuffle: TRUE

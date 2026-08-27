@@ -9,14 +9,19 @@ format:
       - solar
       - html/custom.scss
     css:
+      # - html/styles.css
       - html/webex.css
     toc: true
     link-external-icon: true
     link-external-newwindow: true
-    include-after-body: 
+    include-after-body:
       - text: |
           <script src="/js/bootstrapify.js"></script>
           <script src="/js/webex.js"></script>
+
+execute:
+  cache: false
+  freeze: false
 
 engine: knitr
 
@@ -35,10 +40,14 @@ custom-callout:
     title: "Practice"
     icon-symbol: "fa-gears"
     color: "green"
+  knowledge-check:
+    title: "Knowledge Check"
+    icon-symbol: "fa-pen-to-square"
+    color: "#368FFF"
   reading:
     title: "Reading"
     icon-symbol: "fa-book-open"
-    color: "purple"
+    color: "violet"
   reading-advanced:
     title: "Advanced Reading"
     icon-symbol: "fa-book-open"
@@ -47,6 +56,23 @@ custom-callout:
     title: "External Resources"
     icon-symbol: "fa-link"
     color: "orange"
+  common-mistakes:
+    title: "Common Mistakes"
+    icon-symbol: "fa-bug"
+    color: "#B01919"
+  going-further:
+    title: "Going Further"
+    icon-symbol: "fa-route"
+    color: "#B58900"
+  completion-time:
+    title: "Estimated Completion Time"
+    icon-symbol: "fa-stopwatch"
+    color: "gray"
+  explanation:
+    title: "Explanation"
+    icon-symbol: "fa-comment"
+    color: "violet"
+    collapse: true
 
 filters:
   - webr

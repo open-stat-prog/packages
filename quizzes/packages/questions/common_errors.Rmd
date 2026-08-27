@@ -1,0 +1,24 @@
+Question
+========
+You run `arrange(mtcars, cyl)` and R responds with `could not find function "arrange"`. The **dplyr** package (which
+provides `arrange()`) is already installed on your computer. What is the most likely fix?
+
+Answerlist
+----------
+* Run `install.packages("dplyr")` again.
+* Run `library(dplyr)`, then try `arrange()` again.
+* Run `install.packages("arrange")`.
+* Restart your computer.
+* Rename the `arrange()` function.
+
+Solution
+========
+Since **dplyr** is already installed, the problem isn't installation. It's that the package hasn't been *loaded*
+into the current R session yet. Running `library(dplyr)` loads the package and makes `arrange()` available.
+
+Meta-information
+================
+exname: Package Common Errors
+extype: schoice
+exsolution: 01000
+exshuffle: TRUE

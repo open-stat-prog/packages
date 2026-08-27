@@ -1,0 +1,102 @@
+---
+title: "Installing Packages"
+knitr:
+  opts_chunk:
+    eval: false
+---
+
+Installing a package is something you only need to do **once** per computer (much like installing RStudio itself
+only once). In most cases, you only need to give the package's name to the `install.packages()` function. The
+following code installs the **psych** package.
+
+```{r}
+## Install one package
+install.packages("psych")
+```
+
+If you want to install more than one package at once, use the `c()` function to combine several package names into a
+single call.
+
+```{r}
+## Install two packages at once
+install.packages(c("mice", "lavaan"))
+```
+
+That's it — those two patterns cover the vast majority of package installs you'll ever need to do.
+
+## Common Errors
+
+A few things commonly trip people up the first time they install a package:
+
+- **Misspelling the package name.** `install.packages("ggplot")` (missing the `2`) will fail, because the package is
+  actually called `ggplot2`. R can't guess what you meant, so double-check the spelling against the package's
+  documentation or CRAN page.
+- **Forgetting the quotes.** `install.packages(psych)` (without quotes) tells R to look for an *object* called
+  `psych`, not a package name, and will produce an error. Package names passed to `install.packages()` must be
+  character strings, wrapped in quotes.
+- **No internet connection.** `install.packages()` needs to download the package, so it will fail (often with a
+  fairly cryptic error) if you're offline.
+
+::: practice
+
+## Practice
+
+Use the `install.packages()` function to install the following packages in the default location.
+
+- `ggplot2`
+- `dplyr`
+- `haven`
+
+:::: {.panel-tabset}
+## {{< var tab_title.editor >}}
+
+```{webr-r}
+```
+
+## {{< var tab_title.solution >}}
+
+```{r}
+install.packages(c("ggplot2", "dplyr", "haven"))
+```
+::::
+
+:::
+
+::: {.callout-note}
+
+## Optional / Going Further: Repositories, Development Versions, and Library Locations
+
+Everything above covers what you need for day-to-day work. This box covers a few more advanced topics you can come back to later if you ever need them.
+
+**Where packages come from.** By default, `install.packages()` downloads packages from the *Comprehensive R Archive
+Network* (CRAN). This is a global network of servers ("mirrors") that each host a complete copy of all published R packages.RStudio automatically picks a sensible default mirror, so you don't normally need to specify one. If you ever want to set one explicitly, you can do so via the `repos` argument.
+
+```{r}
+## Explicitly specify a CRAN mirror
+install.packages(c("lattice", "gridExtra"), repos = "https://cloud.r-project.org")
+```
+
+**Other repositories.** Occasionally, a package you need lives outside CRAN. Some other popular repositories include
+[Bioconductor](https://www.bioconductor.org/packages/release/BiocViews.html#___Software) (specialized bioinformatics
+packages) and [R-Universe](https://r-universe.dev/search).
+
+**Installing development versions.** Package developers often share in-progress work on code-hosting platforms like
+[GitHub](https://github.com). The [**remotes**](https://cran.r-project.org/web/packages/remotes/index.html) package
+lets you install directly from a GitHub repository, which sometimes gets you bug fixes or new features before they
+reach CRAN.
+
+```{r}
+## Install the development version of the mice package from GitHub
+remotes::install_github("amices/mice")
+```
+
+**Choosing a library location.** R usually figures out on its own where to install packages, prompting you if it
+needs a different location (e.g. because you lack write permission somewhere). You can also specify this explicitly
+with the `lib` argument.
+
+```{r}
+## Install into a specific, non-default directory
+install.packages("mvtnorm", lib = "../software")
+```
+
+:::

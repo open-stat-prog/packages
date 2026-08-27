@@ -1,0 +1,55 @@
+---
+title: "Add-On Packages"
+page-navigation: false
+format:
+  html: 
+    toc: false
+---
+
+```{r, echo = FALSE, include = FALSE}
+source(here::here("R", "buttons.R"))
+```
+
+::: {.column-margin}
+
+:::: completion-time
+
+**About 45–60 minutes**, including practice exercises and knowledge quizzes.
+
+::::
+
+:::
+
+Welcome to the *Add-On Packages* module. In this module, you will learn how to use supplementary software packages that
+greatly extend R's core functionality. This module is divided into two tutorials.
+
+1. [R Packages](/tutorials/packages/index.qmd)
+1. [Documentation](/tutorials/help/index.qmd)
+
+Each tutorial will comprise a series of interactive lessons with practice problems embedded throughout. After you
+complete each tutorial, you will have the opportunity to complete a knowledge quiz to check your learning.
+
+## Learning Goals
+
+After completing this module, you will be able to:
+
+### R Packages
+
+1. Explain the procedure required to install, load, and use an R package
+1. Install new R packages from a remote package repository
+1. Load an R package
+1. Use the functions provided by add-on packages
+
+### Documentation
+
+1. Access the documentation for functions provided by installed packages
+1. Explain the purpose of the sections in an R help file
+1. Use the information in an R help file to learn how to use an unfamiliar R function
+
+Click the button below to get started!
+
+```{r}
+#| echo: false
+#| results: asis
+begin_button("/tutorials/packages/index.qmd")
+```

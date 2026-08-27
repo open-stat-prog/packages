@@ -1,0 +1,36 @@
+---
+title: "Documentation"
+---
+
+## Why Documentation Matters
+
+By now, you've called quite a few R functions: `mean()`, `round()`, `sum()`, `install.packages()`, `library()`, and
+more. Every one of those functions accepts specific arguments, in a specific order, and some of those arguments have
+default values you've been relying on without necessarily realizing it.
+
+**Do:** run the code below.
+
+```{webr-r}
+round(3.14159, 2)
+round(3.14159)
+```
+
+**See:** the second line still works, even though we only gave `round()` one input.
+
+**Explain:** `round()`'s second argument, `digits`, has a *default value* built in, so R uses that default whenever
+you don't specify your own. But how would you know that, or know what that default value actually is, without
+someone telling you?
+
+That's exactly what **documentation** (also called a "help file") is for. Every function that ships with R, and every
+function provided by a package distributed through CRAN, comes with documentation describing exactly what it does,
+what arguments it accepts, and what those arguments default to. You will refer to documentation constantly. Even
+experienced R users look up help files for functions they've used hundreds of times, just to double check an argument
+name or default value.
+
+Over this tutorial, you'll learn how to open a function's documentation, how to read the sections it contains, and
+how to use that information to correctly call a function you've never seen before.
+
+## Quick Check
+
+Besides looking up default argument values, what's one other reason you might want to check a function's
+documentation before using it?

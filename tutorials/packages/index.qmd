@@ -1,0 +1,40 @@
+---
+title: "Add-On Packages"
+---
+
+## Why Packages?
+
+You've now learned how to use dozens of R's built-in functions, such as `mean()`, `round()`, `sqrt()`, `sum()`, and many
+more. These all ship with R itself, ready to use the moment you open RStudio. But R's built-in functions can't cover
+every possible task. For almost any specialized analysis, fitting a particular kind of statistical model, reading a
+particular file format, making a particular kind of plot, someone in the R community has almost certainly already
+written and shared the code to do it.
+
+## What Is a Package?
+
+A **package** is simply a collection of functions (plus, sometimes, data and documentation) that someone else has
+written and bundled up for others to use — the exact same idea as the individual functions you've already been
+calling, just packaged together in a reusable, installable unit. Just like you don't need to know how `mean()` is
+implemented internally to use it, you don't need to know how a package's functions work internally to use them either.
+
+The following list shows a few common data-analysis tasks and some packages that provide relevant functions for each.
+
+- Treating missing data using multiple imputation
+  - [mice](https://cran.r-project.org/web/packages/mice/index.html)
+  - [Amelia](https://cran.r-project.org/web/packages/Amelia/index.html)
+  - [mi](https://cran.r-project.org/web/packages/mi/index.html)
+- Structural equation modeling
+  - [lavaan](https://cran.r-project.org/web/packages/lavaan/index.html)
+  - [OpenMx](https://cran.r-project.org/web/packages/OpenMx/index.html)
+- Multilevel regression modeling
+  - [lme4](https://cran.r-project.org/web/packages/lme4/index.html)
+  - [nlme](https://cran.r-project.org/web/packages/nlme/index.html)
+- For all but the most trivial data processing, manipulation, and visualization, the [tidyverse](https://www.tidyverse.org/)
+packages are virtually obligatory.
+
+Over the rest of this tutorial, you'll learn the two steps every package requires before you can use it: **installing**
+it (once) and **loading** it (every time you start a new R session and want to use it).
+
+## Quick Check
+
+In your own words: what's the difference between a function and a package?
