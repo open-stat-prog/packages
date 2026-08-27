@@ -69,6 +69,19 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>
+div.callout-practice.callout {
+  border-left-color: green;
+}
+div.callout-practice.callout-style-default > .callout-header {
+  background-color: rgb(from green r g b / 13%);
+}
+div.callout-practice .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-practice.callout-style-default .callout-icon::before, div.callout-practice.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f085' !important;
+  background-image: none;
+}
 div.callout-common-mistakes.callout {
   border-left-color: #B01919;
 }
@@ -82,17 +95,30 @@ div.callout-common-mistakes.callout-style-default .callout-icon::before, div.cal
   content: '\f188' !important;
   background-image: none;
 }
-div.callout-practice.callout {
-  border-left-color: green;
+div.callout-knowledge-check.callout {
+  border-left-color: #368FFF;
 }
-div.callout-practice.callout-style-default > .callout-header {
-  background-color: rgb(from green r g b / 13%);
+div.callout-knowledge-check.callout-style-default > .callout-header {
+  background-color: rgba(54, 143, 255, 0.13);
 }
-div.callout-practice .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-practice.callout-style-default .callout-icon::before, div.callout-practice.callout-titled .callout-icon::before {
+div.callout-knowledge-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-knowledge-check.callout-style-default .callout-icon::before, div.callout-knowledge-check.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
-  content: '\f085' !important;
+  content: '\f044' !important;
+  background-image: none;
+}
+div.callout-reading.callout {
+  border-left-color: violet;
+}
+div.callout-reading.callout-style-default > .callout-header {
+  background-color: rgb(from violet r g b / 13%);
+}
+div.callout-reading .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-reading.callout-style-default .callout-icon::before, div.callout-reading.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f518' !important;
   background-image: none;
 }
 div.callout-completion-time.callout {
@@ -121,19 +147,6 @@ div.callout-going-further.callout-style-default .callout-icon::before, div.callo
   content: '\f4d7' !important;
   background-image: none;
 }
-div.callout-reading.callout {
-  border-left-color: violet;
-}
-div.callout-reading.callout-style-default > .callout-header {
-  background-color: rgb(from violet r g b / 13%);
-}
-div.callout-reading .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-reading.callout-style-default .callout-icon::before, div.callout-reading.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f518' !important;
-  background-image: none;
-}
 div.callout-reading-advanced.callout {
   border-left-color: red;
 }
@@ -158,19 +171,6 @@ div.callout-explanation.callout-style-default .callout-icon::before, div.callout
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
   content: '\f075' !important;
-  background-image: none;
-}
-div.callout-knowledge-check.callout {
-  border-left-color: #368FFF;
-}
-div.callout-knowledge-check.callout-style-default > .callout-header {
-  background-color: rgba(54, 143, 255, 0.13);
-}
-div.callout-knowledge-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-knowledge-check.callout-style-default .callout-icon::before, div.callout-knowledge-check.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f044' !important;
   background-image: none;
 }
 div.callout-resource.callout {
@@ -308,8 +308,8 @@ Note
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Which section of an R package help file would you reference to learn the order in which the function arguments are specified in the function definition?</p>
-<div id="webex-ccee46fb10b0330d4087d4bea6ab2e88" class="webex-radiogroup" data-answer="OFJJVRgGSlIdAD8=">
-<label><input type="radio" autocomplete="off" name="ccee46fb10b0330d4087d4bea6ab2e88"><span>Usage</span></label><label><input type="radio" autocomplete="off" name="ccee46fb10b0330d4087d4bea6ab2e88"><span>Arguments</span></label><label><input type="radio" autocomplete="off" name="ccee46fb10b0330d4087d4bea6ab2e88"><span>Value</span></label><label><input type="radio" autocomplete="off" name="ccee46fb10b0330d4087d4bea6ab2e88"><span>See Also</span></label><label><input type="radio" autocomplete="off" name="ccee46fb10b0330d4087d4bea6ab2e88"><span>Examples</span></label>
+<div id="webex-fef1e43e77902e8c601614d3c4b6c778" class="webex-radiogroup" data-answer="PVVKAUkFH1UbB2Q=">
+<label><input type="radio" autocomplete="off" name="fef1e43e77902e8c601614d3c4b6c778"><span>Value</span></label><label><input type="radio" autocomplete="off" name="fef1e43e77902e8c601614d3c4b6c778"><span>Arguments</span></label><label><input type="radio" autocomplete="off" name="fef1e43e77902e8c601614d3c4b6c778"><span>Usage</span></label><label><input type="radio" autocomplete="off" name="fef1e43e77902e8c601614d3c4b6c778"><span>Description</span></label><label><input type="radio" autocomplete="off" name="fef1e43e77902e8c601614d3c4b6c778"><span>See Also</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -319,8 +319,8 @@ Note
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Which section of an R package help file would you reference to learn the default values for a function’s arguments.</p>
-<div id="webex-03959c9a7798ffcd54a25f248dcb433b" class="webex-radiogroup" data-answer="awIVBRVTFVEbB2Q=">
-<label><input type="radio" autocomplete="off" name="03959c9a7798ffcd54a25f248dcb433b"><span>Usage</span></label><label><input type="radio" autocomplete="off" name="03959c9a7798ffcd54a25f248dcb433b"><span>Value</span></label><label><input type="radio" autocomplete="off" name="03959c9a7798ffcd54a25f248dcb433b"><span>See Also</span></label><label><input type="radio" autocomplete="off" name="03959c9a7798ffcd54a25f248dcb433b"><span>Examples</span></label><label><input type="radio" autocomplete="off" name="03959c9a7798ffcd54a25f248dcb433b"><span>Details</span></label>
+<div id="webex-e5a33b1f18d47033d60416ff405ccc6e" class="webex-radiogroup" data-answer="PgVNAx9THVYdCDk=">
+<label><input type="radio" autocomplete="off" name="e5a33b1f18d47033d60416ff405ccc6e"><span>Examples</span></label><label><input type="radio" autocomplete="off" name="e5a33b1f18d47033d60416ff405ccc6e"><span>Details</span></label><label><input type="radio" autocomplete="off" name="e5a33b1f18d47033d60416ff405ccc6e"><span>Arguments</span></label><label><input type="radio" autocomplete="off" name="e5a33b1f18d47033d60416ff405ccc6e"><span>Description</span></label><label><input type="radio" autocomplete="off" name="e5a33b1f18d47033d60416ff405ccc6e"><span>See Also</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -367,35 +367,35 @@ cov2cor(V)
 </div>
 </div>
 <p>What is the default value for the <code>use</code> argument of the <code>cor()</code> function?</p>
-<div id="webex-64b270e304bdd8801408d5b844269518" class="webex-radiogroup" data-answer="bQROAhsBSQMcBD8=">
-<label><input type="radio" autocomplete="off" name="64b270e304bdd8801408d5b844269518"><span><code>"spearman"</code></span></label><label><input type="radio" autocomplete="off" name="64b270e304bdd8801408d5b844269518"><span><code>NULL</code></span></label><label><input type="radio" autocomplete="off" name="64b270e304bdd8801408d5b844269518"><span><code>"everything"</code></span></label><label><input type="radio" autocomplete="off" name="64b270e304bdd8801408d5b844269518"><span>The <code>use</code> argument does not have a defined default value.</span></label><label><input type="radio" autocomplete="off" name="64b270e304bdd8801408d5b844269518"><span><code>c("pearson", "spearman", "kendall")</code></span></label>
+<div id="webex-8fdef00d7aa2626c631bf4d9f72940d6" class="webex-radiogroup" data-answer="Y1ZIVUoBHFQbUTw=">
+<label><input type="radio" autocomplete="off" name="8fdef00d7aa2626c631bf4d9f72940d6"><span><code>x</code></span></label><label><input type="radio" autocomplete="off" name="8fdef00d7aa2626c631bf4d9f72940d6"><span><code>method</code></span></label><label><input type="radio" autocomplete="off" name="8fdef00d7aa2626c631bf4d9f72940d6"><span><code>"everything"</code></span></label><label><input type="radio" autocomplete="off" name="8fdef00d7aa2626c631bf4d9f72940d6"><span><code>"kendall"</code></span></label><label><input type="radio" autocomplete="off" name="8fdef00d7aa2626c631bf4d9f72940d6"><span>The <code>use</code> argument does not have a defined default value.</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>The default value for the <code>use</code> argument is <code>"everything"</code>.</p>
 <ul>
-<li>Wrong: This is one of the possible methods</li>
-<li>Wrong: This is the default value for <code>y</code></li>
+<li>Wrong: This is an argument name</li>
+<li>Wrong: This is an argument name</li>
 <li>Correct</li>
+<li>Wrong: This is one of the possible methods</li>
 <li>Wrong: There is a default value defined for <code>use</code>.</li>
-<li>Wrong: These are all of the possible methods</li>
 </ul>
 </div>
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>The <strong>dplyr</strong> package is installed on your computer, but you have not loaded it in your current R session. Which of the following will successfully open the help file for dplyr’s <code>arrange()</code> function?</p>
-<div id="webex-1e8f94ab94141dcd1619cf69cfa4012d" class="webex-checkboxgroup" data-answer="alUUVxUETVMVBGw=">
-<label><input type="checkbox" autocomplete="off" name="1e8f94ab94141dcd1619cf69cfa4012d"><span><code>?arrange</code></span></label><label><input type="checkbox" autocomplete="off" name="1e8f94ab94141dcd1619cf69cfa4012d"><span><code>?dplyr::arrange</code></span></label><label><input type="checkbox" autocomplete="off" name="1e8f94ab94141dcd1619cf69cfa4012d"><span><code>help(arrange)</code></span></label><label><input type="checkbox" autocomplete="off" name="1e8f94ab94141dcd1619cf69cfa4012d"><span><code>help(arrange, package = "dplyr")</code></span></label><label><input type="checkbox" autocomplete="off" name="1e8f94ab94141dcd1619cf69cfa4012d"><span><code>arrange()</code></span></label>
+<div id="webex-d21fe0625ee35f9ba40397978edd94d8" class="webex-checkboxgroup" data-answer="PwIdV0kAGgIZVDg=">
+<label><input type="checkbox" autocomplete="off" name="d21fe0625ee35f9ba40397978edd94d8"><span><code>help(arrange)</code></span></label><label><input type="checkbox" autocomplete="off" name="d21fe0625ee35f9ba40397978edd94d8"><span><code>?dplyr::arrange</code></span></label><label><input type="checkbox" autocomplete="off" name="d21fe0625ee35f9ba40397978edd94d8"><span><code>arrange()</code></span></label><label><input type="checkbox" autocomplete="off" name="d21fe0625ee35f9ba40397978edd94d8"><span><code>?arrange</code></span></label><label><input type="checkbox" autocomplete="off" name="d21fe0625ee35f9ba40397978edd94d8"><span><code>help(arrange, package = "dplyr")</code></span></label>
 </div>
 </div>
 <div class="webex-solution">
 <ul>
-<li>Incorrect: without loading dplyr first, R doesn’t know which package’s <code>arrange()</code> you mean, so this errors.</li>
-<li>Correct: the namespace resolution operator (<code>::</code>) tells R exactly which package to search, even if it isn’t loaded.</li>
 <li>Incorrect: without the <code>package</code> argument or <code>::</code>, R can’t find <code>arrange()</code> if dplyr isn’t loaded, so this errors.</li>
-<li>Correct: explicitly naming the <code>package</code> argument works the same way as <code>::</code>.</li>
+<li>Correct: the namespace resolution operator (<code>::</code>) tells R exactly which package to search, even if it isn’t loaded.</li>
 <li>Incorrect: this attempts to call the function (which would also fail, since dplyr isn’t loaded), not open its help file.</li>
+<li>Incorrect: without loading dplyr first, R doesn’t know which package’s <code>arrange()</code> you mean, so this errors.</li>
+<li>Correct: explicitly naming the <code>package</code> argument works the same way as <code>::</code>.</li>
 </ul>
 </div>
 </div>

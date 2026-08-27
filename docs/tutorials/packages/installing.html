@@ -64,6 +64,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../tutorials/packages/loading.html" rel="next">
+<link href="../../tutorials/packages/index.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -402,7 +404,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"options":{"editor-font-scale":"1","fig-cap":"","label":"unnamed-chunk-1","out-height":"","autorun":"false","out-width":"700px","classes":"","dpi":72,"context":"interactive","comment":"","message":"true","read-only":"false","results":"markup","output":"true","fig-height":5,"editor-max-height":"","editor-quick-suggestions":"false","fig-width":7,"editor-word-wrap":"true","warning":"true"},"code":"","id":1}];
+globalThis.qwebrCellDetails = [{"id":1,"code":"","options":{"label":"unnamed-chunk-1","fig-cap":"","editor-font-scale":"1","editor-word-wrap":"true","classes":"","out-height":"","context":"interactive","output":"true","warning":"true","read-only":"false","message":"true","fig-height":5,"editor-max-height":"","autorun":"false","fig-width":7,"out-width":"700px","results":"markup","editor-quick-suggestions":"false","dpi":72,"comment":""}}];
 
 </script>
 <script type="module">
@@ -1656,19 +1658,6 @@ globalThis.qwebrExecuteCode = async function (
 
 </script>
 <style>
-div.callout-explanation.callout {
-  border-left-color: violet;
-}
-div.callout-explanation.callout-style-default > .callout-header {
-  background-color: rgb(from violet r g b / 13%);
-}
-div.callout-explanation .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-explanation.callout-style-default .callout-icon::before, div.callout-explanation.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f075' !important;
-  background-image: none;
-}
 div.callout-completion-time.callout {
   border-left-color: gray;
 }
@@ -1708,17 +1697,17 @@ div.callout-reading.callout-style-default .callout-icon::before, div.callout-rea
   content: '\f518' !important;
   background-image: none;
 }
-div.callout-practice.callout {
-  border-left-color: green;
+div.callout-explanation.callout {
+  border-left-color: violet;
 }
-div.callout-practice.callout-style-default > .callout-header {
-  background-color: rgb(from green r g b / 13%);
+div.callout-explanation.callout-style-default > .callout-header {
+  background-color: rgb(from violet r g b / 13%);
 }
-div.callout-practice .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-practice.callout-style-default .callout-icon::before, div.callout-practice.callout-titled .callout-icon::before {
+div.callout-explanation .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-explanation.callout-style-default .callout-icon::before, div.callout-explanation.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
-  content: '\f085' !important;
+  content: '\f075' !important;
   background-image: none;
 }
 div.callout-reading-advanced.callout {
@@ -1734,6 +1723,19 @@ div.callout-reading-advanced.callout-style-default .callout-icon::before, div.ca
   content: '\f518' !important;
   background-image: none;
 }
+div.callout-going-further.callout {
+  border-left-color: #B58900;
+}
+div.callout-going-further.callout-style-default > .callout-header {
+  background-color: rgba(181, 137, 0, 0.13);
+}
+div.callout-going-further .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-going-further.callout-style-default .callout-icon::before, div.callout-going-further.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f4d7' !important;
+  background-image: none;
+}
 div.callout-common-mistakes.callout {
   border-left-color: #B01919;
 }
@@ -1747,17 +1749,17 @@ div.callout-common-mistakes.callout-style-default .callout-icon::before, div.cal
   content: '\f188' !important;
   background-image: none;
 }
-div.callout-going-further.callout {
-  border-left-color: #B58900;
+div.callout-practice.callout {
+  border-left-color: green;
 }
-div.callout-going-further.callout-style-default > .callout-header {
-  background-color: rgba(181, 137, 0, 0.13);
+div.callout-practice.callout-style-default > .callout-header {
+  background-color: rgb(from green r g b / 13%);
 }
-div.callout-going-further .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-going-further.callout-style-default .callout-icon::before, div.callout-going-further.callout-titled .callout-icon::before {
+div.callout-practice .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-practice.callout-style-default .callout-icon::before, div.callout-practice.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
-  content: '\f4d7' !important;
+  content: '\f085' !important;
   background-image: none;
 }
 div.callout-resource.callout {
@@ -1797,7 +1799,7 @@ div.callout-resource.callout-style-default .callout-icon::before, div.callout-re
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="../../index.html" aria-current="page"> 
-<span class="menu-text">In Progress</span></a>
+<span class="menu-text">Add-On Packages</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -1825,7 +1827,7 @@ div.callout-resource.callout-style-default .callout-icon::before, div.callout-re
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Installing Packages</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tutorials/packages/index.html">Packages</a></li><li class="breadcrumb-item"><a href="../../tutorials/packages/installing.html">Installing Packages</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -1840,7 +1842,83 @@ div.callout-resource.callout-style-default .callout-icon::before, div.callout-re
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">In Progress</span></a>
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../tutorials/packages/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Packages</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tutorials/packages/installing.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Installing Packages</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tutorials/packages/loading.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Loading Packages</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../quizzes/packages/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Knowledge Quiz</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../tutorials/help/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Documentation</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tutorials/help/access.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Accessing Help Files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tutorials/help/sections.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Help File Sections</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tutorials/help/default_arguments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Argument Order &amp; Defaults</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tutorials/help/independent_task.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Independent Task</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../quizzes/help/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Knowledge Quiz</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Conclusion</span></a>
   </div>
 </li>
     </ul>
@@ -1848,14 +1926,8 @@ div.callout-resource.callout-style-default .callout-icon::before, div.callout-re
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#common-errors" id="toc-common-errors" class="nav-link active" data-scroll-target="#common-errors">Common Errors</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -2144,7 +2216,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 }
 </script>
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tutorials/packages/index.html">Packages</a></li><li class="breadcrumb-item"><a href="../../tutorials/packages/installing.html">Installing Packages</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Installing Packages</h1>
 </div>
@@ -2163,25 +2235,66 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </header>
 
 
-<p>Installing a package is something you only need to do <strong>once</strong> per computer (much like installing RStudio itself only once). In most cases, you only need to give the package’s name to the <code>install.packages()</code> function. The following code installs the <strong>psych</strong> package.</p>
+<p>R packages are just little pieces of software, so you can think about installing R packages just like you’d think about installing any other piece of software. Installing a package is something you only need to do <strong>once</strong> per computer (much like you only needed to install R once).</p>
+<p>To install a new package, we’ll typically use the <code>install.packages()</code> function. In most cases, you only need to specify the package’s name as a character string. For example, the following code installs the <strong>psych</strong> package.</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Install one package</span></span>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install one package</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"psych"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>If you want to install more than one package at once, use the <code>c()</code> function to combine several package names into a single call.</p>
+<p>If you want to install more than one package in a single <code>install.packages()</code> call, use the <code>c()</code> function to combine several package names into a single call (don’t forget to quote each name). Below, we’re installing the <strong>mice</strong> and <strong>lavaan</strong> packages.</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Install two packages at once</span></span>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install two packages</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"mice"</span>, <span class="st">"lavaan"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>That’s it — those two patterns cover the vast majority of package installs you’ll ever need to do.</p>
-<section id="common-errors" class="level2">
-<h2 class="anchored" data-anchor-id="common-errors">Common Errors</h2>
-<p>A few things commonly trip people up the first time they install a package:</p>
-<ul>
-<li><strong>Misspelling the package name.</strong> <code>install.packages("ggplot")</code> (missing the <code>2</code>) will fail, because the package is actually called <code>ggplot2</code>. R can’t guess what you meant, so double-check the spelling against the package’s documentation or CRAN page.</li>
-<li><strong>Forgetting the quotes.</strong> <code>install.packages(psych)</code> (without quotes) tells R to look for an <em>object</em> called <code>psych</code>, not a package name, and will produce an error. Package names passed to <code>install.packages()</code> must be character strings, wrapped in quotes.</li>
-<li><strong>No internet connection.</strong> <code>install.packages()</code> needs to download the package, so it will fail (often with a fairly cryptic error) if you’re offline.</li>
-</ul>
+<p>That’s it: those two patterns cover almost all the package installs you’ll ever need to do. Pretty simple, right?</p>
+<div class="callout callout-style-default callout-common-mistakes callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Common Mistakes
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A few things commonly trip people up when they try to install a package.</p>
+<p><strong>Mistake 1:</strong> Misspelling the package name</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"ggplot"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'ggplot' is not available for this version of R
+
+A version of this package for your version of R might be available elsewhere,
+see the ideas at
+https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#Installing-packages</code></pre>
+</div>
+</div>
+<p>The code above fails because the package is actually called <code>ggplot2</code>. R can’t guess what package you want, so the install fails. If you see this error, double-check the spelling of the packages name.</p>
+<p><strong>Mistake 2:</strong> Forgetting to quote the package name</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(psych)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error:
+! object 'psych' not found</code></pre>
+</div>
+</div>
+<p>In the above code, we don’t quote the package name, so R looks for an <em>object</em> called <code>psych</code> in which it will try to find a character string naming a package. There’s no object call <code>psych</code> in our environment, so search fails which causes the install to fail. Package names passed to <code>install.packages()</code> must be character strings: don’t forget the quotes!</p>
+<p><strong>Mistake 3:</strong> No internet connection</p>
+<p><code>install.packages()</code> needs to download the package from the internet. So, if you’re offline, the install will fail with a fairly cryptic error message like the one shown below.</p>
+<pre><code>Warning: unable to access index for repository https://cran.rstudio.com/src/contrib:
+  cannot open URL 'https://cran.rstudio.com/src/contrib/PACKAGES'
+Warning: unable to access index for repository https://cran.rstudio.com/src/contrib:
+  cannot open URL 'https://cran.rstudio.com/src/contrib/PACKAGES'
+Warning message:
+package ‘mice’ is not available for this version of R
+
+A version of this package for your version of R might be available elsewhere,
+see the ideas at
+https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#Installing-packages </code></pre>
+</div>
+</div>
 <div class="callout callout-style-default callout-practice callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -2192,7 +2305,7 @@ Practice
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Use the <code>install.packages()</code> function to install the following packages in the default location.</p>
+<p>Use the <code>install.packages()</code> function to install the following packages.</p>
 <ul>
 <li><code>ggplot2</code></li>
 <li><code>dplyr</code></li>
@@ -2207,45 +2320,62 @@ Practice
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"ggplot2"</span>, <span class="st">"dplyr"</span>, <span class="st">"haven"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"ggplot2"</span>, <span class="st">"dplyr"</span>, <span class="st">"haven"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-going-further callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Optional / Going Further: Repositories, Development Versions, and Library Locations
+Going Further
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Everything above covers what you need for day-to-day work. This box covers a few more advanced topics you can come back to later if you ever need them.</p>
-<p><strong>Where packages come from.</strong> By default, <code>install.packages()</code> downloads packages from the <em>Comprehensive R Archive Network</em> (CRAN). This is a global network of servers (“mirrors”) that each host a complete copy of all published R packages.RStudio automatically picks a sensible default mirror, so you don’t normally need to specify one. If you ever want to set one explicitly, you can do so via the <code>repos</code> argument.</p>
+<p>Everything above covers what you need for day-to-day R usage. This box covers a few more advanced topics that may come in handy as you progress in your R journey. You don’t need to master these ideas now.</p>
+<section id="cran-mirrors" class="level3">
+<h3 class="anchored" data-anchor-id="cran-mirrors">CRAN Mirrors</h3>
+<p>By default, <code>install.packages()</code> downloads packages from the <em>Comprehensive R Archive Network</em> (CRAN): a global network of servers (“mirrors”) that each host a complete copy of all published R packages. RStudio automatically picks a sensible default mirror, so you don’t normally need to specify one. If you ever want to select a particular CRAN mirror, you can do so via the <code>repos</code> argument.</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Explicitly specify a CRAN mirror</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"lattice"</span>, <span class="st">"gridExtra"</span>), <span class="at">repos =</span> <span class="st">"https://cloud.r-project.org"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Explicitly specify a CRAN mirror</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"lattice"</span>, <span class="st">"gridExtra"</span>), <span class="at">repos =</span> <span class="st">"https://cloud.r-project.org"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><strong>Other repositories.</strong> Occasionally, a package you need lives outside CRAN. Some other popular repositories include <a href="https://www.bioconductor.org/packages/release/BiocViews.html#___Software">Bioconductor</a> (specialized bioinformatics packages) and <a href="https://r-universe.dev/search">R-Universe</a>.</p>
-<p><strong>Installing development versions.</strong> Package developers often share in-progress work on code-hosting platforms like <a href="https://github.com">GitHub</a>. The <a href="https://cran.r-project.org/web/packages/remotes/index.html"><strong>remotes</strong></a> package lets you install directly from a GitHub repository, which sometimes gets you bug fixes or new features before they reach CRAN.</p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Install the development version of the mice package from GitHub</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"amices/mice"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><strong>Choosing a library location.</strong> R usually figures out on its own where to install packages, prompting you if it needs a different location (e.g.&nbsp;because you lack write permission somewhere). You can also specify this explicitly with the <code>lib</code> argument.</p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Install into a specific, non-default directory</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"mvtnorm"</span>, <span class="at">lib =</span> <span class="st">"../software"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</div>
-
-
 </section>
+<section id="alternative-repositories" class="level3">
+<h3 class="anchored" data-anchor-id="alternative-repositories">Alternative Repositories</h3>
+<p>Occasionally, a package you need lives outside CRAN. Some other popular repositories include <a href="https://www.bioconductor.org/packages/release/BiocViews.html#___Software">Bioconductor</a> (specialized bioinformatics packages) and <a href="https://r-universe.dev/search">R-Universe</a>.</p>
+</section>
+<section id="installing-development-versions" class="level3">
+<h3 class="anchored" data-anchor-id="installing-development-versions">Installing Development Versions</h3>
+<p>Package developers often share in-progress work on code-hosting platforms like <a href="https://github.com">GitHub</a>. A package’s development version may have new features or bug fixes that are not yet available in the production version released through CRAN. The <a href="https://cran.r-project.org/web/packages/remotes/index.html"><strong>remotes</strong></a> package lets you install an R package directly from a GitHub repository.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install the development version of the mice package from GitHub</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"amices/mice"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="installing-in-a-non-standard-location" class="level3">
+<h3 class="anchored" data-anchor-id="installing-in-a-non-standard-location">Installing in a Non-Standard Location</h3>
+<p>Typically, R will automatically choose the location in which to install packages and prompt you if it needs to use a different location (e.g.&nbsp;because you lack write permissions for the original location). To see a list of all the locations where R will try to install packages, run the <code>.libPaths()</code> function.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.libPaths</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<pre><code>[1] "/home/alice/R/library/4.5"  "/home/alice/R/ide/4.5"
+[3] "/opt/R/4.5.3/lib/R/library"</code></pre>
+<p>If you know that you want to install a package outside the normal location (e.g., because your employer doesn’t allow you to install software outside of your user’s home directory), you can explicitly specify the installation directory with the <code>lib</code> argument.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install the mvtnorm package into a specific, non-default directory</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"mvtnorm"</span>, <span class="at">lib =</span> <span class="st">"~/software/r_packages"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</div>
+</div>
+
+
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -2675,6 +2805,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../tutorials/packages/index.html" class="pagination-link" aria-label="Packages">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Packages</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../tutorials/packages/loading.html" class="pagination-link" aria-label="Loading Packages">
+        <span class="nav-page-text">Loading Packages</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
